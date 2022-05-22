@@ -1,47 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
-              <img src="" alt="Логотип компании 'Gllacy Shop'">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Каталог</a>
-          </li>
-          <li class="navigation-item">
-            <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
-          </li>
-          <li class="navigation-item">
-            <a href="about.html" class="navigation-link">О компании</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a href="tel:+78005558628" class="navigation-link contact-phone-header" >+7 800 555-86-28</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link search"></a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Вход</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
-              <span class="visually-hidden">Корзина</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-index"></main>
-    <footer class="page-footer"></footer>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">
+            <img src="" alt="Логотип компании 'Gllacy Shop'">
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="catalog.html" class="navigation-link">Каталог</a>
+        </li>
+        <li class="navigation-item">
+          <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
+        </li>
+        <li class="navigation-item">
+          <a href="about.html" class="navigation-link">О компании</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a href="tel:+78005558628" class="navigation-link contact-phone-header">+7 800 555-86-28</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link search"></a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">Вход</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">
+            <span class="visually-hidden">Корзина</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden">GllacyShop </h1>
+    <section class="gallery-content">
+      <h2 class="gallery-title strawberry">Нежный пломбир
+        с клубничным джемом</h2>
+      <p class="gllery-discription strawberry">Натуральное мороженое из свежих сливок
+        и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+      <a href="#" class="button order">Заказать</a>
+
+      <h2 class="gallery-title creamy">Сливочное мороженое со вкусом банана</h2>
+      <p class="gllery-discription creamy">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+        наслаждение даже в самый жаркий летний день.</p>
+      <a href="#" class="button order">Заказать</a>
+
+      <h2 class="gallery-title caramel">Карамельный пломбир
+        с маршмеллоу</h2>
+      <p class="gllery-discription 
+      caramel">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+      <a href="#" class="button order">Заказать</a>  
+    </section>
+    <section class="gallery">
+      <h2 class="visually-hidden">Фотогалерея</h2>
+      <ul class="gallery-slider">
+        <li class="slider-item">
+          <img class="slider-image strawberry" src="" alt="Нежный пломбир
+      с клубничным джемом">
+        </li>
+        <li class="slider-item">
+          <img class="slider-image creamy" src="" alt="Сливочное мороженое со вкусом банана">
+        </li>
+        <li class="slider-item">
+          <img class="slider-image caramel" src="" alt="Карамельный пломбир
+          с маршмеллоу">
+        </li>
+      </ul>
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
+
+      <ol class="slider-paginator">
+        <li class="slider-paginator-item">
+          <button class="slider-button active">
+            <span class="visually-hidden">1 фото</span>
+          </button>
+        </li>
+        <li class="slider-paginator-item">
+          <button class="slider-button active">
+            <span class="visually-hidden">2 фото</span>
+          </button>
+        </li>
+        <li class="slider-paginator-item">
+          <button class="slider-button active">
+            <span class="visually-hidden">3 фото</span>
+          </button>
+        </li>
+      </ol>
+    </section>
+    <section class="social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy" class="button">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy" class="button">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="button">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+       
+  </main>
+  <footer class="page-footer"></footer>
+</body>
+
 </html>
