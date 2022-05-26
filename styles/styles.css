@@ -51,16 +51,16 @@ body {
     line-height: 20px;
     color: #2D3440;
     background-color: #feafc3;
-
+    text-align: center;
 }
 
 .navigation-user {
     font-size: 14px;
     line-height: 20px;
-    
 }
 
-.navigation-user .navigation-item {
+
+.navigation-user .navigation-link {
     background-color: rgba(252, 252, 252, 0.3);
 }
 
@@ -75,3 +75,162 @@ body {
 .search {}
 
 .visually-hidden {}
+
+.main-index {
+}
+.visually-hidden {
+}
+.gallery-content {
+}
+.gallery-title {
+}
+.strawberry {
+}
+.gllery-discription {
+}
+.button {
+}
+.order {
+}
+.creamy {
+}
+.caramel {
+}
+.gallery {
+}
+.gallery-slider {
+}
+.slider-item {
+}
+.slider-image-wrapper {
+}
+.slider-image {
+}
+.banana {
+}
+.slider-button {
+}
+.slider-prev {
+}
+.slider-next {
+}
+.slider-paginator {
+}
+.slider-paginator-item {
+}
+.active {
+}
+.social {
+}
+.social-list {
+}
+.social-item {
+}
+.banners {
+}
+.banners-title {
+}
+.banners-card {
+}
+.raspberry {
+}
+.banners-card-discription {
+}
+.banners-image-wrapper {
+}
+.button-gift {
+}
+.marshmallow {
+}
+.popular {
+}
+.popular-title {
+}
+.popular-product-list {
+}
+.product-card {
+}
+.product-card-link {
+}
+.product-card-title {
+}
+.product-card-wrapper {
+}
+.popular-card-image {
+}
+.product-card-discriprion {
+}
+.product-card-price {
+}
+.product-card-button {
+}
+.advantages {
+}
+.advantages-title {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-item-discription {
+}
+.excerpt {
+}
+.excerpt-subtitle {
+}
+.excerpt-link {
+}
+.excerpt-title {
+}
+.newsletter {
+}
+.newsletter-form {
+}
+.newsletter-discription {
+}
+.field {
+}
+.newsletter-button {
+}
+.delivery {
+}
+.delivery-title {
+}
+.delivery-description {
+}
+.delivery-form {
+}
+.appointment-form-date {
+}
+.form-label {
+}
+.contacts {
+}
+.contacts-addres {
+}
+.about-text {
+}
+.contact-addres-phone {
+}
+.contacts-link-form {
+}
+.page-footer {
+}
+.social-footer {
+}
+.footer-links {
+}
+.footer-links-list {
+}
+.footer-links-item {
+}
+.footer-link {
+}
+.footer-decorate {
+}
+.copyright {
+}
+.copyright-text {
+}
+.htmlacademy-link {
+}
