@@ -74,7 +74,6 @@ body {
     line-height: 20px;
 }
 
-
 .navigation-user .navigation-link {
     background-color: rgba(252, 252, 252, 0.3);
 }
@@ -112,8 +111,6 @@ body {
     font-size: 18px;
     line-height: 24px;
 }
-
-
 
 .order {}
 
@@ -263,9 +260,10 @@ body {
 }
 
 .newsletter {
-    background: url("../images/background/background-border-newsletter.jpg");
+    background-image: url("../images/background/background-border-newsletter.jpg");
     background-repeat: no-repeat;
     background-position: 100% auto;
+    color: #565C66;
 }
 
 .newsletter-form {
@@ -276,26 +274,56 @@ body {
 
 .field {}
 
+.delivery {
+    background-image: url("../images/background/background-delivery.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% auto;
+    color: #565C66;
+}
 
-.delivery {}
-
-.delivery-title {}
+.delivery-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
 
 .delivery-description {}
 
-.delivery-form {}
+.delivery-form label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+}
 
 .appointment-form-date {}
 
 .form-label {}
 
-.contacts {}
+.contacts {
+    background-image: url("../images/background/background-contacts.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% auto;
+    color: #565C66;
+}
 
 .contacts-addres {}
 
-.about-text {}
+.about-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+}
 
-.contact-addres-phone {}
+.contact-addres-phone {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+}
 
 .contacts-link-form {}
 
