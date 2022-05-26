@@ -41,6 +41,11 @@ body {
     text-decoration: none;
 }
 
+.pink-button {
+    color: #FCFCFC;
+    background-color: #FF2F64;
+}
+
 .page-header {
     background-color: #feafc3;
     color: #2D3440;
@@ -199,6 +204,7 @@ body {
 
 .product-card-discriprion {
     line-height: 22px;
+    color: #565C66;
 }
 
 .product-card-price {
@@ -209,8 +215,7 @@ body {
 
 .product-card-button {}
 
-.advantages { 
-}
+.advantages {}
 
 .advantages-wrapper {
     background-image: url("../images/background/background-border-advantages.jpg");
@@ -231,27 +236,46 @@ body {
 
 .advantages-item {}
 
-.advantages-item-discription {}
-
-.excerpt {}
-
-.excerpt-subtitle {
-
+.advantages-item-discription {
+    color: #565C66;
 }
 
-.excerpt-link {}
+.excerpt {
+    background-image: url("../images/background/background-excerpt.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% auto;
+}
 
-.excerpt-title {}
+.excerpt-subtitle {
+    line-height: 20px;
+    color: #565C66;
+}
 
-.newsletter {}
+.excerpt-link {
+    text-decoration: none;
+}
 
-.newsletter-form {}
+.excerpt-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2D3440;
+}
+
+.newsletter {
+    background: url("../images/background/background-border-newsletter.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% auto;
+}
+
+.newsletter-form {
+    background-color: #ffffff;
+}
 
 .newsletter-discription {}
 
 .field {}
 
-.newsletter-button {}
 
 .delivery {}
 
