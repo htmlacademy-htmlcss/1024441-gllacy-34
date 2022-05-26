@@ -148,10 +148,15 @@ body {
 
 .banners {}
 
-.banners-wrapper{
+.banners-wrapper {
+    background-color: #FF7799;
 }
 
-.banners-title {}
+.banners-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
 
 .banners-card {}
 
@@ -167,23 +172,40 @@ body {
 
 .popular {}
 
-.popular-title {}
+.popular-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
 
 .popular-product-list {}
 
 .product-card {}
 
-.product-card-link {}
+.product-card-link {
+    text-decoration: none;
+    color: #2D3440;
+}
 
-.product-card-title {}
+.product-card-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
 
 .product-card-wrapper {}
 
 .popular-card-image {}
 
-.product-card-discriprion {}
+.product-card-discriprion {
+    line-height: 22px;
+}
 
-.product-card-price {}
+.product-card-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
 
 .product-card-button {}
 
