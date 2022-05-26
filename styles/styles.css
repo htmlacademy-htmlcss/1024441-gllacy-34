@@ -209,14 +209,13 @@ body {
 
 .product-card-button {}
 
-.advantages {
-    background-image: url("../images/background/background-border-advantages.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% auto;
+.advantages { 
 }
 
 .advantages-wrapper {
-    background-color: #ffffff;
+    background-image: url("../images/background/background-border-advantages.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% auto;
 }
 
 .advantages-title {
@@ -227,6 +226,7 @@ body {
 }
 
 .advantages-list {
+    background-color: #ffffff;
 }
 
 .advantages-item {}
@@ -235,7 +235,9 @@ body {
 
 .excerpt {}
 
-.excerpt-subtitle {}
+.excerpt-subtitle {
+
+}
 
 .excerpt-link {}
 
