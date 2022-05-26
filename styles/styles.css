@@ -209,11 +209,25 @@ body {
 
 .product-card-button {}
 
-.advantages {}
+.advantages {
+    background-image: url("../images/background/background-border-advantages.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% auto;
+}
 
-.advantages-title {}
+.advantages-wrapper {
+    background-color: #ffffff;
+}
 
-.advantages-list {}
+.advantages-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.advantages-list {
+}
 
 .advantages-item {}
 
