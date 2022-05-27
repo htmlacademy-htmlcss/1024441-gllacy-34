@@ -46,6 +46,12 @@ body {
     background-color: #FF2F64;
 }
 
+.catalog-products-button {
+    background-color: rgba(252, 252, 252, 0.3);
+    font-size: 14px;
+
+}
+
 .page-header {
     background-color: #feafc3;
     color: #2D3440;
@@ -365,3 +371,98 @@ body {
     text-decoration: none;
     color: #2D3440;
 }
+
+.main-inner {}
+
+.inner-header {}
+
+.visually-hidden {}
+
+.breadcrumbs {}
+
+.breadcrumbs-item {}
+
+.breadcrumbs-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.inner-header-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.catalog-products label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-products legend {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-filter {}
+
+.catalog-filter-group {}
+
+.catalog-filter-title {}
+
+.select-control {}
+
+.catalog-filter-list {
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-item {}
+
+.control {}
+
+.control-input {}
+
+.control-value {}
+
+.controol-input {}
+
+.button-paginator-show-more {}
+
+.pagination-wrapper {}
+
+.paginator {}
+
+.paginator-item {}
+
+.paginator-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.paginator-prev {}
+
+.paginator-disabled {}
+
+.visually-hidden {}
+
+.paginator-current {}
+
+.paginator-next {}
+
+.page-footer {}
+
+.social-footer {}
+
+.social-list {}
+
+.social-item {}
