@@ -134,13 +134,20 @@ body {
 
 .gallery-content {}
 
+.gallery-index{
+    display: flex;
+}
+
+.gallery-discription{
+    width: 470px;
+    margin-right: 21px;
+}
+
 .gallery-title {
     font-weight: 900;
     font-size: 36px;
     line-height: 46px;
 }
-
-.strawberry {}
 
 .gllery-text {
     font-size: 18px;
@@ -149,19 +156,26 @@ body {
 
 .order {}
 
+.strawberry {}
+
 .creamy {}
 
 .caramel {}
 
 .gallery {}
 
-.gallery-slider {}
+.gallery-slider {
+    list-style: none;
+    display: flex;
+}
 
 .slider-item {}
 
 .slider-image-wrapper {}
 
-.slider-image {}
+.slider-image {
+    width: 306px;
+}
 
 .banana {}
 
@@ -171,15 +185,30 @@ body {
 
 .slider-next {}
 
-.slider-paginator {}
+.slider-paginator {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .slider-paginator-item {}
 
 .active {}
 
-.social {}
+.paginator-social{
+    display: flex;
+    justify-content: space-between;
+    
+}
 
-.social-list {}
+.social {
+}
+
+.social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .social-item {}
 
