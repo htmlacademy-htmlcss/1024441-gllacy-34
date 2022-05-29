@@ -315,9 +315,16 @@ body {
 
 .advantages-list {
     background-color: #ffffff;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
-.advantages-item {}
+.advantages-item {
+    width: 442px;
+}
 
 .advantages-item-discription {
     color: #565C66;
