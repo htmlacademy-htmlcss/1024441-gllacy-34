@@ -63,14 +63,23 @@ body {
     color: #2D3440;
 }
 
-.page-header-logo {}
+.page-header-logo {
+    margin-right: 16px;
+}
 
 .header-logo {}
 
-.navigation {}
+.navigation {
+    width: 1170px;
+    display: flex;
+    margin: 0 auto;
+}
 
 .navigation-list {
     list-style: none;
+    width: 400px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-item {}
@@ -87,6 +96,8 @@ body {
 .navigation-user {
     font-size: 14px;
     line-height: 20px;
+    margin-left: auto;
+    max-width: 460px;
 }
 
 .navigation-user .navigation-link {
