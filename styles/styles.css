@@ -251,15 +251,24 @@ body {
 
 .popular {}
 
+
 .popular-title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
 }
 
-.popular-product-list {}
+.popular-product-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-.product-card {}
+.product-card {
+    width: 270px;
+}
 
 .product-card-link {
     text-decoration: none;
