@@ -69,7 +69,9 @@ body {
 
 .navigation {}
 
-.navigation-list {}
+.navigation-list {
+    list-style: none;
+}
 
 .navigation-item {}
 
