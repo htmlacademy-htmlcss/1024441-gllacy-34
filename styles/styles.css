@@ -120,6 +120,11 @@ body {
     flex-grow: 1;
 }
 
+.page-container{
+    margin: 0 auto;
+    width: 1170px;
+}
+
 .main-index {
     background-color: #feafc3;
     color: #2D3440;
