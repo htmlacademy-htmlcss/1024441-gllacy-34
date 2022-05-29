@@ -522,14 +522,14 @@ body {
     color: #2D3440;
 }
 
-.catalog-products label {
+.catalog-products-filter label {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
 }
 
-.catalog-products legend {
+.catalog-products-filter legend {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -545,10 +545,20 @@ body {
 .select-control {}
 
 .catalog-filter-list {
-    background-color: rgba(252, 252, 252, 0.3);    
+    background-color: rgba(252, 252, 252, 0.3);
+    
 }
 
 .catalog-filter-item {}
+
+.product-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .control {}
 
