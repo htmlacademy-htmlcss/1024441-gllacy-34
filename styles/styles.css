@@ -568,11 +568,24 @@ body {
 
 .controol-input {}
 
-.button-paginator-show-more {}
+.pagination{
+    display: flex;
+}
+
+.button-paginator-show-more {
+    margin: 0 auto;
+}
 
 .pagination-wrapper {}
 
-.paginator {}
+.paginator {
+    display: flex;
+    width: 168px;
+    list-style: none;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+}
 
 .paginator-item {}
 
