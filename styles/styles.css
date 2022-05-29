@@ -330,10 +330,16 @@ body {
     color: #565C66;
 }
 
+.exceprt-newsletter-box{
+    display: flex;
+    justify-content: space-between;
+}
+
 .excerpt {
     background-image: url("../images/background/background-excerpt.jpg");
     background-repeat: no-repeat;
     background-position: 100% auto;
+    width: 570px;
 }
 
 .excerpt-subtitle {
@@ -357,6 +363,7 @@ body {
     background-repeat: no-repeat;
     background-position: 100% auto;
     color: #565C66;
+    width: 570px;
 }
 
 .newsletter-form {
@@ -372,6 +379,12 @@ body {
     background-repeat: no-repeat;
     background-position: 100% auto;
     color: #565C66;
+    display: flex;
+}
+
+.delivery-discription{
+    width: 371px;
+    margin-right: 135px;
 }
 
 .delivery-title {
@@ -381,13 +394,18 @@ body {
     color: #2D3440;
 }
 
-.delivery-description {}
+.delivery-text {}
 
 .delivery-form label {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #2D3440;
+    width: 420px;
+}
+
+.delivery-form{
+    background-color: #FCFCFC;
 }
 
 .appointment-form-date {}
