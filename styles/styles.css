@@ -2,7 +2,7 @@
     font-family: "Inter";
     src: url(../fonts/inter-400.woff2) format(woff2);
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal;
     font-display: swap;
 }
 
@@ -22,7 +22,7 @@
     font-display: swap;
 }
 
-html {   
+html {
     height: 100%;
 }
 
@@ -116,11 +116,11 @@ body {
 
 .visually-hidden {}
 
-.main-container{
+.main-container {
     flex-grow: 1;
 }
 
-.page-container{
+.page-container {
     margin: 0 auto;
     width: 1170px;
 }
@@ -134,11 +134,11 @@ body {
 
 .gallery-content {}
 
-.gallery-index{
+.gallery-index {
     display: flex;
 }
 
-.gallery-discription{
+.gallery-discription {
     width: 470px;
     margin-right: 21px;
 }
@@ -195,14 +195,13 @@ body {
 
 .active {}
 
-.paginator-social{
+.paginator-social {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.social {
-}
+.social {}
 
 .social-list {
     list-style: none;
@@ -212,19 +211,33 @@ body {
 
 .social-item {}
 
-.banners {}
+.banners {
+}
+
+.banners-box{
+    display: flex;
+    justify-content: space-between;
+}
 
 .banners-wrapper {
     background-color: #FF7799;
+    width: 570px;
 }
 
 .banners-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.banners-heading {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
 
-.banners-card {}
+.banners-card {
+}
 
 .raspberry {}
 
@@ -372,7 +385,7 @@ body {
     color: #565C66;
 }
 
-.contacts-wrapper{
+.contacts-wrapper {
     background-color: #FCFCFC;
 }
 
