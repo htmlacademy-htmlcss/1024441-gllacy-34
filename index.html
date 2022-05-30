@@ -9,38 +9,40 @@
 
 <body>
   <header class="page-header">
-    <nav class="navigation">
+    <div class="page-container header-box">
       <a href="#" class="page-header-logo">
         <img class="header-logo" src="images/logo.svg" alt="Логотип компании 'Gllacy Shop'" width="137" height="55.72">
       </a>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link">Каталог</a>
-        </li>
-        <li class="navigation-item">
-          <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
-        </li>
-        <li class="navigation-item">
-          <a href="about.html" class="navigation-link">О компании</a>
-        </li>
-      </ul>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a href="tel:+78005558628" class="contact-phone-header">+7 800 555-86-28</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link search">Поиск</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">Вход</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">
-            <span class="visually-hidden">Корзина</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a href="about.html" class="navigation-link">О компании</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="tel:+78005558628" class="contact-phone-header">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link search">Поиск</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Вход</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main-index main-container">
     <div class="page-container">
@@ -70,7 +72,7 @@
         </section>
         <section class="gallery">
           <h2 class="visually-hidden" hidden>Фотогалерея</h2>
-          <ol class="gallery-slider">
+          <ul class="gallery-slider">
             <li class="slider-item">
               <div class="slider-image-wrapper">
                 <img class="slider-image strawberry" src="images/gallery/strawberry.png"
@@ -89,7 +91,7 @@
                   alt="Карамельный пломбир с маршмеллоу" width="306" height="507">
               </div>
             </li>
-          </ol>
+          </ul>
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -98,7 +100,7 @@
           </button>
         </section>
       </div>
-      <div class="paginator-social">
+      <div class="pagination-social">
         <ol class="slider-paginator">
           <li class="slider-paginator-item">
             <button class="slider-button active">
@@ -321,7 +323,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer-container">
+    <div class="page-container footer-container">
       <section class="social-footer">
         <h2 class="visually-hidden" hidden>Социальные сети</h2>
         <ul class="social-list">

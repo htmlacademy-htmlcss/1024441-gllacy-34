@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     min-height: 100%;
     flex-direction: column;
@@ -62,6 +62,15 @@ body {
 .page-header {
     background-color: #feafc3;
     color: #2D3440;
+}
+
+.page-container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-box{
+    display: flex;
 }
 
 .page-header-logo {
@@ -119,11 +128,6 @@ body {
 
 .main-container {
     flex-grow: 1;
-}
-
-.page-container {
-    margin: 0 auto;
-    width: 1170px;
 }
 
 .main-index {
@@ -196,7 +200,7 @@ body {
 
 .active {}
 
-.paginator-social {
+.pagination-social {
     display: flex;
     justify-content: space-between;
 
@@ -445,10 +449,8 @@ body {
 
 .page-footer {}
 
-.page-footer-container{
+.footer-container{
     display: flex;
-    width: 1170px;
-    margin: 0 auto;
 }
 
 .social-footer {
