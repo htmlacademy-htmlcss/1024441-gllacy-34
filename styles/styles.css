@@ -70,7 +70,11 @@ body {
 .catalog-products-button {
     background-color: rgba(252, 252, 252, 0.3);
     font-size: 14px;
+    
+}
 
+.catalog-products-filter .catalog-products-button{
+    padding: 8px 52px;
 }
 
 .page-header {
@@ -612,15 +616,26 @@ body {
 .main-inner {
 }
 
+.header-catalog{
+    margin-bottom: 40px;
+}
+
 .header-inner {
     margin-bottom: 32px;
 }
 
 .visually-hidden {}
 
-.breadcrumbs {}
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-.breadcrumbs-item {}
+.breadcrumbs-item {
+    margin-right: 28px;
+}
 
 .breadcrumbs-link {
     font-weight: 700;
@@ -635,7 +650,10 @@ body {
     font-size: 32px;
     line-height: 46px;
     color: #2D3440;
+    margin: 0;
 }
+
+.catalog-products-filter{}
 
 .catalog-products-filter label {
     font-weight: 400;
@@ -651,20 +669,51 @@ body {
     color: #2D3440;
 }
 
-.catalog-filter {}
+.catalog-filter {  
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+}
 
-.catalog-filter-group {}
+.catalog-filter-group{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: 24px;
+}
 
-.catalog-filter-title {}
+.fill{
+    margin-right: 16px;
+}
+
+.catalog-filter-title {
+    margin-bottom: 8px;
+    padding: 0;
+}
 
 .select-control {}
 
 .catalog-filter-list {
     background-color: rgba(252, 252, 252, 0.3);
-
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.catalog-filter-item {}
+.catalog-filter-item {
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.catalog-filter-item:first-child{
+    padding-left: 24px;
+}
+
+.catalog-filter-item:last-child{
+    margin: 0;
+    padding-right: 24px;
+}
 
 .product-list {
     list-style: none;
@@ -673,6 +722,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .control {}
@@ -685,6 +735,8 @@ body {
 
 .pagination {
     display: flex;
+    padding: 40px 0;
+    margin-bottom: 40px;
 }
 
 .button-paginator-show-more {
@@ -702,7 +754,9 @@ body {
     padding: 0;
 }
 
-.paginator-item {}
+
+.paginator-item {
+}
 
 .paginator-link {
     font-weight: 400;
@@ -710,6 +764,7 @@ body {
     line-height: 20px;
     color: #2D3440;
     text-decoration: none;
+    padding: 2px 8px;
 }
 
 .paginator-prev {}
