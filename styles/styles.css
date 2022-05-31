@@ -369,7 +369,9 @@ body {
 
 .product-card-button {}
 
-.advantages {}
+.advantages {
+    margin-bottom: 80px;
+}
 
 .advantages-wrapper {
     background-image: url("../images/background/background-border-advantages.jpg");
@@ -377,28 +379,37 @@ body {
     background-position: 100% auto;
 }
 
+.advantages-box-wrapper{
+    background-color: #FFFFFF;
+}
+
 .advantages-title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
     text-align: center;
+    margin: 0;
+    padding: 56px 64px;
 }
 
 .advantages-list {
-    background-color: #ffffff;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    padding-bottom: 16px;
 }
 
 .advantages-item {
     width: 442px;
+    margin-bottom: 40px;
 }
 
 .advantages-item-discription {
     color: #565C66;
+    margin: 0;
+    margin-left: 104px;
 }
 
 .exceprt-newsletter-box{
