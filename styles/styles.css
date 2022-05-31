@@ -59,6 +59,7 @@ body {
     color: #2D3440;
     text-decoration: none;
     padding: 12px 32px;
+    box-sizing: border-box;
 }
 
 .pink-button {
@@ -274,6 +275,7 @@ body {
 }
 
 .banners {
+    margin-bottom: 80px;
 }
 
 .banners-box{
@@ -290,6 +292,8 @@ body {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
+    margin: 0;
+    margin-bottom: 55px;
 }
 
 .banners-heading {
@@ -311,13 +315,18 @@ body {
 
 .marshmallow {}
 
-.popular {}
+.popular {
+    margin-bottom: 80px;
+}
 
 
 .popular-title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
+    margin: 0;
+    margin-bottom: 56px;
+
 }
 
 .popular-product-list {
