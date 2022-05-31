@@ -165,8 +165,15 @@ body {
 
 .gallery-content {}
 
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
 .gallery-index {
     display: flex;
+    margin-bottom: 80px;
 }
 
 .gallery-discription {
