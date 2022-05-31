@@ -71,6 +71,7 @@ body {
 
 .header-box{
     display: flex;
+    padding-top: 24px;
 }
 
 .page-header-logo {
@@ -86,21 +87,26 @@ body {
 }
 
 .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     width: 400px;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .navigation-item {}
 
 .navigation-link {
+    display: block;
     text-align: center;
     line-height: 20px;
     color: #2D3440;
     background-color: #feafc3;
     text-align: center;
     text-decoration: none;
+    padding:8px 16px;
 }
 
 .navigation-user {
@@ -108,6 +114,10 @@ body {
     line-height: 20px;
     margin-left: auto;
     max-width: 460px;
+}
+
+.navigation-user .navigation-item:not(:last-child){
+    margin-right: 16px;
 }
 
 .navigation-user .navigation-link {
@@ -120,6 +130,7 @@ body {
     color: #2D3440;
     background-color: #feafc3;
     text-decoration: none;
+    padding: 6px 0;
 }
 
 .search {}
