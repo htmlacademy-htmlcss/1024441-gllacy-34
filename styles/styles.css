@@ -81,6 +81,7 @@ body {
 
 .catalog-products-filter .catalog-products-button{
     padding: 8px 52px;
+    margin-top: auto;
 }
 
 .page-header {
@@ -747,7 +748,7 @@ body {
 .catalog-filter {  
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 44px;
+    margin-bottom: 95px;
 }
 
 .catalog-filter-group{
@@ -791,13 +792,12 @@ body {
 }
 
 .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 91px 30px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px;
 }
 
 .control {}
