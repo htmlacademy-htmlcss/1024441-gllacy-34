@@ -339,44 +339,63 @@ body {
 }
 
 .popular-product-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap:0 30px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px 24px 40px;
     width: 270px;
+    background-color: #FCFCFC;
 }
 
 .product-card-link {
     text-decoration: none;
     color: #2D3440;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .product-card-title {
+    margin: 0;
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 8px;
 }
 
 .product-card-wrapper {}
 
-.popular-card-image {}
+.popular-card-image {
+    object-fit: cover;
+}
 
 .product-card-discriprion {
+    margin: 0;
     line-height: 22px;
     color: #565C66;
+    margin-bottom: 20px;
 }
 
 .product-card-price {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin-right: auto;
 }
 
-.product-card-button {}
+.product-card-button {
+    margin-left: auto;
+    padding: 0;
+}
 
 .advantages {
     margin-bottom: 80px;
