@@ -38,6 +38,12 @@ body {
     background-color: #feafc3;
 }
 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -62,7 +68,7 @@ body {
     box-sizing: border-box;
 }
 
-.pink-button {
+.submit-form-button {
     color: #FCFCFC;
     background-color: #FF2F64;
 }
@@ -457,11 +463,23 @@ body {
 
 .newsletter-form {
     background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 26px 28px 26px;
 }
 
-.newsletter-discription {}
+.newsletter-discription {
+    margin-bottom: 44px;
+}
 
-.field {}
+.field {
+    flex-grow: 1;
+    margin-right: 18px;
+}
+
+.newsletter-form .submit-form-button{
+    margin-left: auto;
+}
 
 .delivery {
     background-image: url("../images/background/background-delivery.jpg");
@@ -495,12 +513,22 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #2D3440;
-    width: 420px;
 }
 
 .delivery-form {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #FCFCFC;
     padding: 40px 40px 42px 40px;
+    width: 500px;
+}
+
+
+
+.field-group{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .delivery-form .info{
@@ -509,11 +537,35 @@ body {
 
 .delivery-form-text {
     margin: 0;
+    margin-bottom: 32px;
 }
 
-.appointment-form-date {}
+.appointment-form-date {
+    margin-right: 16px;
+    margin-bottom: 20px;
+    max-width: 117px;
+}
 
-.form-label {}
+.appointment-form-phone{
+    flex-grow: 1;
+}
+
+.appointment-form-adres{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.appointment-phone{
+}
+
+.delivery-form .submit-form-button{
+    margin: 0 auto;
+
+}
+
+.form-label {
+    margin-bottom: 8px;
+}
 
 .contacts {
     background-image: url("../images/background/background-contacts.jpg");
