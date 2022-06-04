@@ -38,6 +38,12 @@ body {
     background-color: #feafc3;
 }
 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -62,7 +68,7 @@ body {
     box-sizing: border-box;
 }
 
-.pink-button {
+.submit-form-button {
     color: #FCFCFC;
     background-color: #FF2F64;
 }
@@ -75,6 +81,7 @@ body {
 
 .catalog-products-filter .catalog-products-button{
     padding: 8px 52px;
+    margin-top: auto;
 }
 
 .page-header {
@@ -333,44 +340,63 @@ body {
 }
 
 .popular-product-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap:0 30px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px 24px 40px;
     width: 270px;
+    background-color: #FCFCFC;
 }
 
 .product-card-link {
     text-decoration: none;
     color: #2D3440;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .product-card-title {
+    margin: 0;
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 8px;
 }
 
 .product-card-wrapper {}
 
-.popular-card-image {}
+.popular-card-image {
+    object-fit: cover;
+}
 
 .product-card-discriprion {
+    margin: 0;
     line-height: 22px;
     color: #565C66;
+    margin-bottom: 20px;
 }
 
 .product-card-price {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin-right: auto;
 }
 
-.product-card-button {}
+.product-card-button {
+    margin-left: auto;
+    padding: 0;
+}
 
 .advantages {
     margin-bottom: 80px;
@@ -457,11 +483,23 @@ body {
 
 .newsletter-form {
     background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 26px 28px 26px;
 }
 
-.newsletter-discription {}
+.newsletter-discription {
+    margin-bottom: 44px;
+}
 
-.field {}
+.field {
+    flex-grow: 1;
+    margin-right: 18px;
+}
+
+.newsletter-form .submit-form-button{
+    margin-left: auto;
+}
 
 .delivery {
     background-image: url("../images/background/background-delivery.jpg");
@@ -495,21 +533,59 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #2D3440;
-    width: 420px;
 }
 
 .delivery-form {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #FCFCFC;
     padding: 40px 40px 42px 40px;
+    width: 500px;
+}
+
+
+
+.field-group{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-form .info{
+    display: none;
 }
 
 .delivery-form-text {
     margin: 0;
+    margin-bottom: 32px;
 }
 
-.appointment-form-date {}
+.appointment-form-date {
+    margin-right: 16px;
+    margin-bottom: 20px;
+    max-width: 117px;
+}
 
-.form-label {}
+.appointment-form-phone{
+    flex-grow: 1;
+}
+
+.appointment-form-adres{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.appointment-phone{
+}
+
+.delivery-form .submit-form-button{
+    margin: 0 auto;
+
+}
+
+.form-label {
+    margin-bottom: 8px;
+}
 
 .contacts {
     background-image: url("../images/background/background-contacts.jpg");
@@ -672,7 +748,7 @@ body {
 .catalog-filter {  
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 44px;
+    margin-bottom: 95px;
 }
 
 .catalog-filter-group{
@@ -716,13 +792,12 @@ body {
 }
 
 .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 91px 30px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px;
 }
 
 .control {}
