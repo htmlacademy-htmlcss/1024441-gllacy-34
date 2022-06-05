@@ -22,6 +22,12 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -36,12 +42,6 @@ body {
     line-height: 22px;
     color: #242424;
     background-color: #feafc3;
-}
-
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -76,7 +76,7 @@ body {
 .catalog-products-button {
     background-color: rgba(252, 252, 252, 0.3);
     font-size: 14px;
-    
+
 }
 
 .catalog-products-filter .catalog-products-button{
@@ -341,7 +341,7 @@ body {
 
 .popular-product-list {
     display: grid;
-    grid-template-columns: repeat(4, 270px);
+    grid-template-columns: repeat(4, 1fr);
     gap:0 30px;
     list-style: none;
     margin: 0;
@@ -353,7 +353,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 40px 24px 40px;
-    width: 270px;
     background-color: #FCFCFC;
 }
 
@@ -539,11 +538,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #FCFCFC;
-    padding: 40px 40px 42px 40px;
+    padding: 40px;
+    padding-bottom: 42px;
     width: 500px;
 }
-
-
 
 .field-group{
     margin: 0;
@@ -745,7 +743,7 @@ body {
     color: #2D3440;
 }
 
-.catalog-filter {  
+.catalog-filter {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 95px;
@@ -793,7 +791,7 @@ body {
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(4, 270px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 91px 30px;
     list-style: none;
     padding: 0;
