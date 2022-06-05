@@ -71,6 +71,7 @@ body {
 .submit-form-button {
   color: #FCFCFC;
   background-color: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
 .catalog-products-button {
@@ -588,7 +589,6 @@ body {
   position: absolute;
   width: 48px;
   height: 48px;
-  background-image:;
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
@@ -758,9 +758,13 @@ body {
   margin: 0;
 }
 
-.contacts-addres {}
+.contacts-addres {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-style: normal;
+}
 
-.about-text {
+ .about-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -775,12 +779,39 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+  margin-top: 12px;
 }
 
 .work-time {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.contacts .button{
+  margin-top: 32px;
+}
+
+.submit-form-button:hover{
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #FF2F64;
+  color: #2D3440;
+}
+
+.submit-form-button:focus{
+  outline: 2px solid #2D3440;
+}
+
+.submit-form-button:active{
+  outline: 2px solid #2D3440;
+  background-color: rgba(254, 175, 195, 0.5);
+  color: rgba(252, 252, 252, 1);
+}
+
+.submit-form-button-disable{
+  background-color:  #B9B9B9;
+  color: #565C66;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .contacts-link-form {}
@@ -839,7 +870,6 @@ body {
 .copyright-text {}
 
 .htmlacademy-link {
-  text-decoration: none;
   color: #2D3440;
 }
 
