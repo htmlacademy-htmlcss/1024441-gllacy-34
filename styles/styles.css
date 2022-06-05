@@ -448,7 +448,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 107px;
 
 }
 
@@ -485,29 +485,58 @@ body {
   margin-bottom: 8px;
 }
 
-.product-card-wrapper {}
+.product-card-wrapper{}
 
 .popular-card-image {
   object-fit: cover;
 }
 
-.product-card-discriprion {
+.product-card-discriprion{
   margin: 0;
   line-height: 22px;
   color: #565C66;
   margin-bottom: 20px;
 }
 
-.product-card-price {
+.product-card-price{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin-right: auto;
 }
 
-.product-card-button {
+.product-card-button{
   margin-left: auto;
-  padding: 0;
+  padding: 9px;
+  background-color: rgba(255, 47, 100, 1);
+  border-radius: 35px;
+  max-width: 32px;
+  max-height: 32px;
+  color: #FCFCFC;
+}
+
+.product-card-button:hover{
+  color: rgba(45, 52, 64, 1);
+  outline: 2px solid #FF2F64;
+  background-color: rgba(252, 252, 252, 0.3);;
+}
+
+.product-card-button:focus{
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  outline: -1px solid #2D3440;
+}
+
+.product-card-button:active{
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba(255, 203, 216, 1);
+  outline: 2px solid #FF2F64;
+}
+
+
+
+.product-card-icon{
+  margin: auto -1px;
 }
 
 .advantages {
@@ -548,9 +577,22 @@ body {
 }
 
 .advantages-item-discription {
+  position: relative;
   color: #565C66;
   margin: 0;
   margin-left: 104px;
+}
+
+.advantages-item-discription::before{
+  content:"";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-image:;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left:-68px;
 }
 
 .exceprt-newsletter-box {
@@ -723,6 +765,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 
 .contact-addres-phone {
