@@ -281,17 +281,20 @@ body {
   outline: 4px solid rgba(252, 252, 252, 0.4);
 }
 
-.button-order:hover {
+.button-order:hover,
+.button-paginator-show-more:hover {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 4px solid #FCFCFC;
 }
 
-.button-order:focus {
+.button-order:focus,
+.button-paginator-show-more:focus {
   background-color: #FCFCFC;
   outline: 2px solid #2D3440;
 }
 
-.button-order:active {
+.button-order:active,
+.button-paginator-show-more:active {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
@@ -895,6 +898,7 @@ body {
 
 .breadcrumbs-item {
   margin-right: 28px;
+  position: relative;
 }
 
 .breadcrumbs-link {
@@ -903,6 +907,26 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+}
+
+.breadcrumbs-link-border{
+  border-bottom: 1px solid #2D3440 ;
+}
+
+.breadcrumbs-item:not(:last-child)::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 6px;
+  background-image: url(/images/icons/union.svg);
+  background-repeat: no-repeat;
+  right: -18px;
+  top: 9px;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-item::after{
+  background-color: transparent;
 }
 
 .inner-header-title {
@@ -1022,18 +1046,56 @@ body {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
-  padding: 2px 8px;
+  padding: 4px 8px;
+  border-radius: 50px;
 }
 
-.paginator-prev {}
+.paginator-link:hover{
+  background-color: rgba(252, 252, 252, 0.5);
+}
 
-.paginator-disabled {}
+.paginator-link:focus{
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 1px solid #2D3440;
+}
 
-.visually-hidden {}
+.paginator-link:active{
+  outline: 1px solid #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.5);
+}
 
-.paginator-current {}
+.paginator-current {
+  background-color: #FCFCFC;
+}
 
-.paginator-next {}
+.paginator-prev {
+  position: relative;
+}
+
+.paginator-prev-icon{
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+
+.paginator-disabled {
+  opacity: 0.5;
+}
+
+.paginator-next {
+  position: absolute;
+}
+
+.paginator-prev-next{
+  position: absolute;
+  left: 10px;
+  top: 3px;
+  transform: rotate(180deg);
+}
+
+.paginator-disable{
+  color:rgba(45, 52, 64, 0.5);
+}
 
 .page-footer {}
 
