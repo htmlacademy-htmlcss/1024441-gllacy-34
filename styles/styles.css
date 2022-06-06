@@ -957,7 +957,7 @@ body {
   position: absolute;
   width: 7px;
   height: 6px;
-  background-image: url(/images/icons/union.svg);
+  background-image: url(../images/icons/union.svg);
   background-repeat: no-repeat;
   right: -18px;
   top: 9px;
