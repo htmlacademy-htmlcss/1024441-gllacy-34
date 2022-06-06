@@ -549,9 +549,12 @@ body {
 }
 
 .advantages-wrapper {
-  background-image: url("../images/background/background-border-advantages.jpg");
+  background-image: url("../images/background/background-border-advantages.png");
   background-repeat: no-repeat;
   background-position: 100% auto;
+  background-size: cover;
+  padding: 24px;
+  border-radius: 15px;
 }
 
 .advantages-box-wrapper {
