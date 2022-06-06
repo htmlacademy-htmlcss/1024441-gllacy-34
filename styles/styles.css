@@ -579,16 +579,19 @@ body {
 .advantages-item {
   width: 442px;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .advantages-item-discription {
-  position: relative;
   color: #565C66;
   margin: 0;
   margin-left: 104px;
 }
 
-.advantages-item-discription::before{
+.advantages-ice-cream::before,
+.advantages-cow::before,
+.advantages-leaf::before,
+.advantages-thermometer::before{
   content:"";
   position: absolute;
   width: 48px;
@@ -596,7 +599,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
-  left:-68px;
+  left:48px;
+}
+
+.advantages-ice-cream::before{
+  background-image: url(../images/icons/ice-cream-cone.svg);
+}
+
+.advantages-cow::before{
+  background-image: url(../images/icons/cow.svg);
+}
+
+.advantages-leaf::before{
+  background-image: url(../images/icons/leaf.svg);
+}
+
+.advantages-thermometer::before{
+  background-image: url(../images/icons/thermometer.svg);
 }
 
 .exceprt-newsletter-box {
