@@ -217,14 +217,14 @@ body {
 .navigation-link-entry .navigation-icon {
   right: auto;
   left: 17px;
-  top:-3px;
+  top:0;
   margin: auto 0;
 }
 
 .navigation-link-basket .navigation-icon {
   right: auto;
   left: 17px;
-  top:-3px;
+  top:0;
   margin: auto 0;
 }
 
@@ -468,6 +468,7 @@ body {
   justify-content: center;
   padding: 0 40px 24px 40px;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .product-card-link {
