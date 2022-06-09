@@ -87,14 +87,29 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
-            <select class="select-control" name="sort" id="sort-value">
-              <option value="popular">по популярности</option>
-            </select>
+            <div class="select">
+              <select class="select-control" name="sort" id="sort-value">
+                <option value="popular">по популярности</option>
+              </select>
+            </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-            <input type="range" id="pricecount" name="pricecount" min="100" max="500">
+            <div class="range-wrapper">
+              <div class="range">
+                <div class="range-sclae">
+                  <div style="left: 32px; width:56px;" class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -102,25 +117,29 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" class="control-input">
+                  <input type="radio" class="visually-hidden control-input">
+                  <span class="control-mark"></span>
                   <span class="control-value">0%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" class="control-input" checked>
-                  до 10%
+                  <input type="radio" class="visually-hidden control-input" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-value">до 10%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" class="control-input">
+                  <input type="radio" class="visually-hidden control-input">
+                  <span class="control-mark"></span>
                   <span class="control-value">до 30%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" class="control-input">
+                  <input type="radio" class="visually-hidden control-input">
+                  <span class="control-mark"></span>
                   <span class="control-value">выше 30%</span>
                 </label>
               </li>
@@ -132,31 +151,36 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="controol-input" type="checkbox" checked>
+                  <input class="control-input visually-hidden" type="checkbox" checked>
+                  <span class="control-mark"></span>
                   <span class="control-value">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="controol-input" type="checkbox" checked>
+                  <input class="control-input visually-hidden" type="checkbox" checked>
+                  <span class="control-mark"></span>
                   <span class="control-value">сахарные посыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="controol-input" type="checkbox">
+                  <input class="control-input visually-hidden" type="checkbox">
+                  <span class="control-mark"></span>
                   <span class="control-value">фрукты</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="controol-input" type="checkbox">
+                  <input class="control-input visually-hidden" type="checkbox">
+                  <span class="control-mark"></span>
                   <span class="control-value">сиропы</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="controol-input" type="checkbox">
+                  <input class="control-input visually-hidden" type="checkbox">
+                  <span class="control-mark"></span>
                   <span class="control-value">джемы</span>
                 </label>
               </li>
@@ -428,8 +452,8 @@
             <li class="paginator-item">
               <a href="#" class="paginator-next">
                 <span class="visually-hidden">Следующая страница</span>
-                <svg class="paginator-prev-next" aria-hidden="true" focusable="false" width="16"
-                  height="16" viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
+                <svg class="paginator-prev-next" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
                     fill="#2D3440" />

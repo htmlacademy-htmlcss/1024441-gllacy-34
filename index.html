@@ -93,10 +93,28 @@
           <section class="gallery">
             <h2 class="visually-hidden">Фотогалерея</h2>
             <ul class="gallery-slider">
-              <li class="slider-item">
+              <li class="slider-item slider-item-focused">
                 <div class="slider-image-wrapper">
                   <img class="slider-image strawberry" src="images/gallery/strawberry.png"
                     alt="Нежный пломбир с клубничным джемом" width="306" height="507">
+                  <div class="slider-controls">
+                    <button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                      <svg class="slider-button-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" />
+                      </svg>
+                    </button>
+                    <button class="slider-button slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                      <svg class="slider-button-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </li>
               <li class="slider-item">
@@ -112,29 +130,22 @@
                 </div>
               </li>
             </ul>
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
           </section>
-
         </div>
         <div class="pagination-social">
           <ol class="slider-paginator">
             <li class="slider-paginator-item">
-              <button class="slider-button active">
+              <button class="slider-paginator-button paginator-button-active">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
             <li class="slider-paginator-item">
-              <button class="slider-button active">
+              <button class="slider-paginator-button ">
                 <span class="visually-hidden">2 фото</span>
               </button>
             </li>
             <li class="slider-paginator-item">
-              <button class="slider-button active">
+              <button class="slider-paginator-button">
                 <span class="visually-hidden">3 фото</span>
               </button>
             </li>
@@ -337,8 +348,8 @@
               всегда
               в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
               Честно =)</label>
-            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-              id="newsletter-email" required>
+            <input class="field newsletter-field" placeholder="email@example.com" type="email" name="newsletter-email"
+              id="newsletter-email">
 
             <button class="button submit-form-button" type="submit">Отправить</button>
           </form>
@@ -363,11 +374,11 @@
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
             </label>
-            <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
           </p>
           <p class="field-group appointment-form-phone">
             <label class="form-label" for="appointment-phone">Телефон</label>
-            <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
+            <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
           </p>
           <p class="field-group appointment-form-adres">
             <label class="form-label" for="appointment-adress">Адрес
@@ -375,7 +386,7 @@
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
             </label>
-            <input type="text" id="appointment-address" name="appointment-address"
+            <input class="field" type="text" id="appointment-address" name="appointment-address"
               placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button class="button submit-form-button" type="submit">Отправить</button>
