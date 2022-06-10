@@ -1318,7 +1318,7 @@ body {
 }
 
 .select-control:hover {
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .select-control:focus {
