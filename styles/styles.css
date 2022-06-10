@@ -143,7 +143,9 @@ body {
   align-items: center;
 }
 
-.navigation-item {}
+.navigation-item {
+  position: relative;
+}
 
 .navigation-link {
   display: block;
@@ -221,15 +223,60 @@ body {
 }
 
 .popover {
+  position: absolute;
   background-color: #FCFCFC;
   border-radius: 4px;
-  font-family: ;
+  font-family: 'Inter', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
-.popover-search {}
+.popover-search {
+  display: none;
+  width: 356px;
+  padding: 24px 16px;
+  filter: drop-shadow(0px 8px 16px rgba(45, 52, 64, 0.12));
+  right: 338px;
+  right: 0px;
+  top: 40px;
+  z-index: 1;
+}
+
+.popover-search form{
+  position: relative;
+}
+
+.popover-search-open{
+  display: block;
+}
+
+.input-search {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  background-color: #FCFCFC;
+}
+
+.search-close-button {
+  position: absolute;
+  border: none;
+  width: 16px;
+  height: 16px;
+  bottom: 16px;
+  right: 13px;
+  background-image: url(../images/icons/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .navigation-link-basket {
   padding-left: 38px;
