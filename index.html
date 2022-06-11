@@ -58,7 +58,9 @@
               <form action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden">Поиск</label>
                 <input class="input-search" type="text" placeholder="Поиск по сайту">
-                <button class="search-close-button" type="reset"></button>
+                <button class="search-close-button" type="reset">
+                  <span class="visually-hidden">Сбросить</span>
+                </button>
               </form>
 
             </div>
@@ -72,14 +74,16 @@
               </svg>
             </a>
             <div class="popover popover-entry">
-              <h2 class="popover-entry-title">Личный кабинет</h2>
-              <input class="login" name="login" type="email" value="email@example.com">
-              <input class="password" type="password" value="1234567">
-              <button class="button submit-form-button">Войти</button>
-              <div class="entry-links">
-                <a class="entry-link" href="#">Забыли пароль?</a>
-                <a class="entry-link" href="#">Регистрация</a>
-              </div>
+              <label class="popover-entry-title">Личный кабинет</label>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <input class="login" name="login" type="email" value="email@example.com">
+                <input class="password" type="password" value="1234567">
+                <button class="button submit-form-button">Войти</button>
+                <div class="entry-links">
+                  <a class="entry-link" href="#">Забыли пароль?</a>
+                  <a class="entry-link" href="#">Регистрация</a>
+                </div>
+              </form>
             </div>
           </li>
           <li class="navigation-item">
@@ -89,9 +93,37 @@
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
               </svg>
-              <span class="visually-hidden">Корзина</span>
-              Пусто
+              2 товара
             </a>
+            <div class="popover popover-basket">
+              <h2 class="popover-basket-title">Корзина</h2>
+              <ol class="basket-list">
+                <li class="basket-item">
+                  <div class="basket-image-wrapper">
+                    <img width="46px" height="46px" src="images/product-card/raspbery.png" alt="Малина">
+                  </div>
+                  <div class="basket-discription">
+                    <h3 class="basket-item-title">Малинка</h3>
+                    <p class="price-per-kg">1 кг х 310 ₽</p>
+                  </div>
+                  <b class="product-basket-price">310 ₽</b>
+                  <button class="basket-button-close"></button>
+                </li>
+                <li class="basket-item">
+                  <div class="basket-image-wrapper">
+                    <img width="46px" height="46px" src="images/product-card/bubblegum.png" alt="Бабл-гам">
+                  </div>
+                  <div class="basket-discription">
+                    <h3 class="basket-item-title">Бабл-гам</h3>
+                    <p class="price-per-kg">1,5 кг х 320 ₽</p>
+                  </div>
+                  <b class="product-basket-price">480 ₽</b>
+                  <button class="basket-button-close"></button>
+                </li>
+              </ol>
+              <button class="button submit-form-button">Оформить заказ</button>
+              <p class="popover-basket-total">Итого: 790 ₽</p>
+            </div>
           </li>
         </ul>
       </nav>
