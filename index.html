@@ -86,7 +86,7 @@
                   <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
                     value="1234567">
                 </p>
-                <button class="button submit-form-button">Войти</button>
+                <button class="button submit-form-button" type="submit">Войти</button>
                 <div class="entry-links">
                   <a class="entry-link" href="#">Забыли пароль?</a>
                   <a class="entry-link" href="#">Регистрация</a>
@@ -129,7 +129,7 @@
                   <button class="basket-button-close"></button>
                 </li>
               </ol>
-              <button class="button submit-form-button">Оформить заказ</button>
+              <a class="button submit-form-button">Оформить заказ</a>
               <p class="popover-basket-total">Итого: 790 ₽</p>
             </div>
           </li>
@@ -441,11 +441,20 @@
           <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
           </p>
           <p class="field-group appointment-form-date">
-            <label class="form-label" for="appointment-date">Дата
-              <button class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-              </button>
-            </label>
+            <span class="form-label form-label-icon">
+              <label class="form-label" for="appointment-date">Дата</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                      fill="#2D3440" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label"></span>
+              </span>
+            </span>
             <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
           </p>
           <p class="field-group appointment-form-phone">
@@ -454,11 +463,20 @@
               placeholder="+7 800 999-00-00">
           </p>
           <p class="field-group appointment-form-adres">
-            <label class="form-label" for="appointment-adress">Адрес
-              <button class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-              </button>
-            </label>
+            <span class="form-label form-label-icon">
+              <label class="form-label" for="appointment-adress">Адрес</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                      fill="#2D3440" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label"></span>
+              </span>
+            </span>
             <input class="field" type="text" id="appointment-address" name="appointment-address"
               placeholder="ул. Большая Конюшенная, 19/8">
           </p>
@@ -550,24 +568,26 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-feedback">
       <p class="modal-feedback-title">Мы обязательно ответим вам!</p>
-      <form class="modal-form" action="action="https://echo.htmlacademy.ru/" method="post">
+      <form class="modal-form" action="action=" https://echo.htmlacademy.ru/" method="post">
         <p class="field-group">
           <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
-          <input class="feedback-form-field field" id="feedback-name" name="feedback-name" type="text" placeholder="Имя и фамилия">
+          <input class="feedback-form-field field" id="feedback-name" name="feedback-name" type="text"
+            placeholder="Имя и фамилия">
         </p>
         <p class="field-group">
           <label class="visually-hidden" for="email">Email</label>
           <input class="feedback-form-field field" type="text" id="email" name="email" placeholder="email@example.com">
         </p>
         <p class="field-group">
-          <label class="visually-hidden" for="messege" >Введите сообщение в свободной форме</label>
-          <textarea class="feedback-form-field field feedback-form-field-messege" name="messege" id="messege" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+          <label class="visually-hidden" for="messege">Введите сообщение в свободной форме</label>
+          <textarea class="feedback-form-field field feedback-form-field-messege" name="messege" id="messege" cols="30"
+            rows="7" placeholder="В свободной форме"></textarea>
         </p>
       </form>
       <button class="close-button">
         <span class="visually-hidden">Закрыть</span>
       </button>
-      <button class="button submit-form-button">Отправить</button>
+      <button class="button submit-form-button" type="submit">Отправить</button>
     </div>
   </div>
 </body>

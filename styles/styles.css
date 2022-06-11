@@ -1401,7 +1401,42 @@ body {
   display: none;
 }
 
-.main-inner {}
+.form-label-icon{
+  position: relative;
+  padding-right: 14px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+.tooltip-toggle {
+  border: none;
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  color: #FCFCFC;
+  background-color: rgba(255, 119, 153, 1);
+  text-transform: none;
+  padding: 5px 8px;
+  border-radius: 8px;
+  width: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
 
 .header-catalog {
   margin-bottom: 40px;
@@ -1410,8 +1445,6 @@ body {
 .header-inner {
   margin-bottom: 32px;
 }
-
-.visually-hidden {}
 
 .breadcrumbs {
   list-style: none;
