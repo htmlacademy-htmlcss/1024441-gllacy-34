@@ -551,7 +551,9 @@ body {
   color: #2D3440;
 }
 
-.gallery-content {}
+.gallery-content {
+  padding: 136px 0 121px 70px;
+}
 
 .gallery-column {
   display: flex;
@@ -569,7 +571,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 470px;
-  margin-right: 21px;
 }
 
 .gallery-discription-active {
@@ -580,7 +581,8 @@ body {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  margin: 136px 0 24px 0;
+  margin:0;
+  margin-bottom: 24px;
 }
 
 .gllery-text {
@@ -622,6 +624,7 @@ body {
 .gallery-slider {
   list-style: none;
   display: flex;
+  padding: 0;
   margin: 0;
 }
 
@@ -660,6 +663,7 @@ body {
 }
 
 .slider-button {
+  position: relative;
   width: 38px;
   height: 38px;
   border: none;
@@ -703,7 +707,10 @@ body {
 }
 
 .slider-button-icon {
-  transform: translateY(1px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
 }
 
 .slider-paginator {
@@ -809,9 +816,25 @@ body {
   justify-content: space-between;
 }
 
+.banners-left{
+  background-image: url(../images/banners/raspberry.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.banners-right{
+  background-image: url(../images/banners/marshmallow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
 .banners-wrapper {
   background-color: #FF7799;
   width: 570px;
+  border-radius: 16px;
+  padding: 36px;
 }
 
 .banners-title {
@@ -828,17 +851,16 @@ body {
   line-height: 30px;
 }
 
-.banners-card {}
+.banners-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 328px;
+}
 
-.raspberry {}
-
-.banners-card-discription {}
-
-.banners-image-wrapper {}
-
-.button-gift {}
-
-.marshmallow {}
+.banners-card-discription {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 .popular {
   margin-bottom: 80px;
