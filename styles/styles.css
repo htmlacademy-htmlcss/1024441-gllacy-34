@@ -488,6 +488,7 @@ body {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
   list-style: none;
+  z-index: 1;
 }
 
 .subcatalog {
@@ -568,7 +569,7 @@ body {
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  width: 470px;
+  max-width: 470px;
 }
 
 .gallery-discription-active {
@@ -749,7 +750,6 @@ body {
 .pagination-social {
   display: flex;
   justify-content: space-between;
-
 }
 
 .social {}
@@ -1106,6 +1106,7 @@ body {
 
 .delivery {
   display: flex;
+  align-items: center;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
   background-image: url("../images/background/background-delivery.jpg");
@@ -1590,35 +1591,34 @@ body {
   cursor: pointer;
 }
 
-.toggle-icon-dott {
-  color: #FCFCFC;
-}
-
-.range-toggle {}
-
-.range-toggle:hover .toggle-icon-curcle {
-  color: #FCFCFC;
-}
-
-.range-toggle:hover .toggle-icon-dott {
-  color: #2D3440;
-}
-
-.range-toggle:active .toggle-icon-curcle {
-  color: #2D3440;
-}
-
-.range-toggle:active .toggle-icon-dott {
-  color: transparent;
-}
-
-.range-toggle.toggle-icon-curcle:focus {
-  outline: 2px solid #2D3440;
-}
 
 .toggle-min {
   top: -8px;
   left: -10px;
+}
+
+.toggle-button {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  border: solid 5px #2D3440;
+}
+
+.toggle-button:hover {
+  border-color: #FCFCFC;
+  background-color: #2D3440;
+}
+
+.toggle-button:focus {
+  border-color: #FCFCFC;
+  outline: 2px solid #2D3440;
+}
+
+.toggle-button:active {
+  border-color: #2D3440;
+  ;
 }
 
 .toggle-max {
@@ -1692,6 +1692,16 @@ body {
   cursor: pointer;
 }
 
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+  border-radius: 3px;
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -1711,29 +1721,48 @@ body {
   background-color: #FCFCFC;
 }
 
-.control-input[type="radio"]:disabled + .control-mark:hover::before {
-  background-color: #2D3440;
+.control-input[type="radio"]:disabled:hover + .control-mark::before {
+  background-color: #FCFCFC;
   opacity: 0.5;
 }
 
-.control:hover .control-mark {
+.control-input[type="radio"] + .control-mark:hover {
   border-color: #FCFCFC;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
-  background-image: url(../images/icons/check-on.svg);
-  background-repeat: no-repeat;
-  background-position: left 5px center;
+.checked-icon {
+  display: none;
+  color: #2D3440;
 }
 
-.control-mark {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #242424;
-  border-radius: 3px;
+.control-input[type="checkbox"] + .control-mark {
+  border: 1px solid #242424;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  border: none;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark .checked-icon {
+  display: block;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark:hover .checked-icon {
+  color: #FCFCFC;
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark:hover .checked-icon {
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.5;
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark {
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.5;
 }
 
 .control-input {}
