@@ -569,7 +569,7 @@ body {
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 470px;
+  max-width: 480px;
 }
 
 .gallery-discription-active {
@@ -590,6 +590,7 @@ body {
   line-height: 24px;
   margin: 0;
   margin-bottom: 48px;
+  max-width: 390px;
 }
 
 .button-order {
@@ -619,21 +620,6 @@ body {
   color: #B9B9B9;
 }
 
-.gallery {}
-
-/* .gallery-slider {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-} */
-/*
-.slider-item {
-  max-width: 80px;
-  transform: scale(0.4);
-  opacity: 0.5;
-} */
-
 .slider-item-focused {
   max-width: 306px;
   position: relative;
@@ -659,17 +645,6 @@ body {
 .slider-item-two {
   margin-right: 40px;
 }
-
-/* .slider-item::before {
-  content: "";
-  position: absolute;
-  width: 312px;
-  height: 312px;
-  background-color: #FFCBD8;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-} */
 
 .slider-image-wrapper::after {
   content: "";
@@ -776,14 +751,10 @@ body {
   outline: 1px solid #2D3440;
 }
 
-.active {}
-
 .pagination-social {
   display: flex;
   justify-content: space-between;
 }
-
-.social {}
 
 .social-list {
   display: flex;
@@ -830,14 +801,28 @@ body {
   opacity: 0.5;
 }
 
-
 .banners {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 80px;
+}
+.banners-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  max-width: 464px;
+  text-align: center;
 }
 
 .banners-box {
   display: flex;
   justify-content: space-between;
+}
+
+.banners-left {
+  margin-right: 30px;
 }
 
 .banners-left {
@@ -861,14 +846,6 @@ body {
   padding: 36px;
 }
 
-.banners-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  margin: 0;
-  margin-bottom: 55px;
-}
-
 .banners-heading {
   font-weight: 700;
   font-size: 24px;
@@ -888,14 +865,18 @@ body {
 
 .popular {
   margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .popular-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 107px;
+  max-width: 580px;
+  text-align: center;
 }
 
 .popular-product-list {
@@ -950,6 +931,8 @@ body {
   line-height: 22px;
   color: #565C66;
   margin-bottom: 20px;
+  max-width: 180px;
+  text-align: center;
 }
 
 .product-card-price {
@@ -1006,15 +989,17 @@ body {
 
 .advantages-box-wrapper {
   background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 56px 40px;
 }
 
 .advantages-title {
   font-weight: 900;
   font-size: 32px;
+  width: 100%;
   line-height: 46px;
   text-align: center;
   margin: 0;
-  padding: 56px 64px;
 }
 
 .advantages-list {
@@ -1024,11 +1009,9 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 16px;
 }
 
 .advantages-item {
-  width: 442px;
   margin-bottom: 40px;
   position: relative;
 }
@@ -1037,6 +1020,7 @@ body {
   color: #565C66;
   margin: 0;
   margin-left: 104px;
+  max-width: 412px;
 }
 
 .advantages-ice-cream::before,
@@ -1059,6 +1043,9 @@ body {
 
 .advantages-cow::before {
   background-image: url(../images/icons/cow.svg);
+}
+
+.advantages-cow{
 }
 
 .advantages-leaf::before {
