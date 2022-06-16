@@ -40,6 +40,7 @@ body {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #242424;
   background-color: #feafc3;
 }
@@ -1209,7 +1210,11 @@ body {
 }
 
 .field {
-  font: inherit;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   border-radius: 4px;
   border: 1px solid #B9B9B9;
   padding: 14px 16px;
@@ -1280,6 +1285,7 @@ body {
 }
 
 .contact-addres-phone {
+  display: block;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
