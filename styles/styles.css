@@ -558,7 +558,9 @@ body {
 }
 
 .gallery-content {
-  padding: 136px 0 121px 70px;
+  padding-top: 134px;
+  padding-bottom: 121px;
+  padding-left: 77px;
 }
 
 .gallery-column {
@@ -569,7 +571,9 @@ body {
 
 .gallery-index {
   display: flex;
-  margin-bottom: 80px;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .gallery-discription {
@@ -596,8 +600,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 48px;
-  max-width: 390px;
+  margin-bottom: 44px;
+  max-width: 410px;
 }
 
 .button-order {
@@ -632,14 +636,33 @@ body {
   position: relative;
   opacity: 1;
   margin-right: 25px;
+  left: 35px;
+  bottom: 5px;
+}
+
+.slider-item-two {
+  position: absolute;
+  left: 365px;
+  bottom: 3px;
+}
+
+.slider-item-three {
+  position: absolute;
+  left: 502px;
+  bottom: 3px;
 }
 
 .slider-image-wrapper {
   position: relative;
 }
 
+.gallery {
+  align-self: flex-end;
+}
+
 .slider {
   display: flex;
+  position: relative;
 }
 
 .slider-item {
@@ -649,8 +672,13 @@ body {
 
 }
 
-.slider-item-two {
-  margin-right: 40px;
+.pagination-social {
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 9px;
 }
 
 .slider-image-wrapper::after {
@@ -756,11 +784,6 @@ body {
 .slider-paginator-button:focus {
   background-color: rgba(252, 252, 252, 0.3);
   outline: 1px solid #2D3440;
-}
-
-.pagination-social {
-  display: flex;
-  justify-content: space-between;
 }
 
 .social-list {
