@@ -107,7 +107,8 @@
               </a>
               <div class="popover popover-basket">
                 <h2 class="popover-basket-title">Корзина</h2>
-                <ol class="basket-list">
+                <form class="popover-basket-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <ol class="basket-list">
                   <li class="basket-item">
                     <div class="basket-image-wrapper">
                       <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина">
@@ -128,11 +129,12 @@
                       <p class="price-per-kg">1,5 кг х 320 ₽</p>
                     </div>
                     <b class="product-basket-price">480 ₽</b>
-                    <button class="basket-button-close"></button>
+                    <button class="basket-button-close" type="button"></button>
                   </li>
                 </ol>
-                <a class="button submit-form-button">Оформить заказ</a>
+                <button class="button submit-form-button" type="submit">Оформить заказ</button>
                 <p class="popover-basket-total">Итого: 790 ₽</p>
+                </form>
               </div>
             </li>
           </ul>
@@ -418,13 +420,13 @@
           <section class="newsletter">
             <h2 class="visually-hidden">Email рассылка</h2>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="newsletter-discription">Подпишитесь на нашу сладкую рассылку и будьте
+              <label class="newsletter-discription" for="newsletter-email">Подпишитесь на нашу сладкую рассылку и будьте
                 всегда
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
                 ерунды.
                 Честно =)</label>
               <input class="field newsletter-field" placeholder="email@example.com" type="email" name="newsletter-email"
-                id="newsletter-email">
+                >
               <button class="button submit-form-button" type="submit">Отправить</button>
             </form>
           </section>
@@ -467,7 +469,7 @@
             </p>
             <p class="field-group appointment-form-adres">
               <span class="form-label form-label-icon">
-                <label class="form-label" for="appointment-adress">Адрес</label>
+                <label class="form-label" for="appointment-adres">Адрес</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -480,7 +482,7 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label"></span>
                 </span>
               </span>
-              <input class="field" type="text" id="appointment-address" name="appointment-address"
+              <input class="field" type="text" id="appointment-addres" name="appointment-addres"
                 placeholder="ул. Большая Конюшенная, 19/8">
             </p>
             <button class="button submit-form-button" type="submit">Отправить</button>

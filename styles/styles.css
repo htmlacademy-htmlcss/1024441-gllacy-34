@@ -447,13 +447,18 @@ body {
   padding: 48px;
   filter: drop-shadow(0 15px 40px rgba(45, 52, 64, 0.12));
   border-radius: 4px;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   top: 40px;
 }
 
 .popover-basket-open {
   display: flex;
+}
+
+.popover-basket-form{
+  display: flex;
+  flex-wrap: wrap
 }
 
 .popover-basket-title {
@@ -506,7 +511,7 @@ body {
 .basket-discription {
   display: flex;
   flex-direction: column;
-  min-width: 81px;
+  width: 90px;
   margin-right: 83px;
 }
 
@@ -1758,10 +1763,6 @@ body {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark:hover::before {
-  background-color: #FCFCFC;
-}
-
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   content: "";
@@ -1773,13 +1774,16 @@ body {
   transform: translateX(50%);
 }
 
-.control-input[type="radio"] + .control-mark:hover {
+.control:hover  .control-mark{
   border-color: #FCFCFC;
 }
 
-.control-input[type="radio"]:disabled:hover + .control-mark::before {
-  background-color: #FCFCFC;
+.control-input[type="radio"]:disabled + .control-mark{
   opacity: 0.5;
+}
+
+.control:hover .control-input[type="radio"]:checked + .control-mark::before{
+  background-color: #FCFCFC;
 }
 
 .checked-icon {
@@ -1791,7 +1795,7 @@ body {
   border: 1px solid #242424;
 }
 
-.control-input[type="checkbox"]:hover + .control-mark {
+.control:hover .control-mark{
   border-color: #FCFCFC;
 }
 
@@ -1803,27 +1807,22 @@ body {
   display: block;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark:hover .checked-icon {
+.control:hover .control-input[type="checkbox"]:checked + .control-mark .checked-icon{
   color: #FCFCFC;
 }
 
-.control-input[type="checkbox"]:disabled + .control-mark:hover .checked-icon {
-  color: rgba(0, 0, 0, 1);
+.control-input[type="checkbox"]:disabled + .control-mark{
   opacity: 0.5;
 }
 
-.control-input[type="checkbox"]:disabled + .control-mark {
-  color: rgba(0, 0, 0, 1);
+.control-input[type="checkbox"]:disabled + .control-mark .checked-icon{
   opacity: 0.5;
 }
 
-.control-input {}
-
-.control-value {}
-
-.controol-input {}
-
-.control-fill {}
+.control-mark:focus{
+  outline: none;
+  border-color: #FCFCFC;
+}
 
 .pagination {
   display: flex;

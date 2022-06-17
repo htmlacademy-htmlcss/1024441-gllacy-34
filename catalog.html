@@ -15,8 +15,9 @@
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-item catalog-link">
               <a href="catalog.html" class="navigation-link">Каталог</a>
+
               <ul class="subcatalog">
                 <li class="novelties-item">
                   <a class="novelties-link subcatalog-link" href="#">Новинки</a>
@@ -105,32 +106,34 @@
               </a>
               <div class="popover popover-basket">
                 <h2 class="popover-basket-title">Корзина</h2>
-                <ol class="basket-list">
-                  <li class="basket-item">
-                    <div class="basket-image-wrapper">
-                      <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина">
-                    </div>
-                    <div class="basket-discription">
-                      <h3 class="basket-item-title">Малинка</h3>
-                      <p class="price-per-kg">1 кг х 310 ₽</p>
-                    </div>
-                    <b class="product-basket-price">310 ₽</b>
-                    <button class="basket-button-close"></button>
-                  </li>
-                  <li class="basket-item">
-                    <div class="basket-image-wrapper">
-                      <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам">
-                    </div>
-                    <div class="basket-discription">
-                      <h3 class="basket-item-title">Бабл-гам</h3>
-                      <p class="price-per-kg">1,5 кг х 320 ₽</p>
-                    </div>
-                    <b class="product-basket-price">480 ₽</b>
-                    <button class="basket-button-close"></button>
-                  </li>
-                </ol>
-                <a class="button submit-form-button">Оформить заказ</a>
-                <p class="popover-basket-total">Итого: 790 ₽</p>
+                <form class="popover-basket-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <ol class="basket-list">
+                    <li class="basket-item">
+                      <div class="basket-image-wrapper">
+                        <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина">
+                      </div>
+                      <div class="basket-discription">
+                        <h3 class="basket-item-title">Малинка</h3>
+                        <p class="price-per-kg">1 кг х 310 ₽</p>
+                      </div>
+                      <b class="product-basket-price">310 ₽</b>
+                      <button class="basket-button-close"></button>
+                    </li>
+                    <li class="basket-item">
+                      <div class="basket-image-wrapper">
+                        <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам">
+                      </div>
+                      <div class="basket-discription">
+                        <h3 class="basket-item-title">Бабл-гам</h3>
+                        <p class="price-per-kg">1,5 кг х 320 ₽</p>
+                      </div>
+                      <b class="product-basket-price">480 ₽</b>
+                      <button class="basket-button-close" type="button"></button>
+                    </li>
+                  </ol>
+                  <button class="button submit-form-button" type="submit">Оформить заказ</button>
+                  <p class="popover-basket-total">Итого: 790 ₽</p>
+                </form>
               </div>
             </li>
           </ul>
@@ -171,10 +174,10 @@
                 <div class="range">
                   <div class="range-sclae">
                     <div style="left: 32px; width:56px;" class="range-bar">
-                      <div class="range-toggle toggle-min">
+                      <div class="range-toggle toggle-min" tabindex="0">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </div>
-                      <div class="range-toggle toggle-max">
+                      <div class="range-toggle toggle-max" tabindex="0">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </div>
                     </div>
@@ -188,30 +191,30 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" class="visually-hidden control-input">
-                    <span class="control-mark"></span>
-                    <span class="control-value">0%</span>
+                    <input type="radio" value="0%" name="fat-percent" class="visually-hidden control-input">
+                    <span class="control-mark" tabindex="0"></span>
+                    0%
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" class="visually-hidden control-input" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-value">до 10%</span>
+                    <input type="radio" value="before 10%" name="fat-percent" class="visually-hidden control-input" checked>
+                    <span class="control-mark" tabindex="0"></span>
+                    до 10%
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" class="visually-hidden control-input">
-                    <span class="control-mark"></span>
-                    <span class="control-value">до 30%</span>
+                    <input type="radio" value="before 30%" name="fat-percent" class="visually-hidden  control-input">
+                    <span class="control-mark" tabindex="0"></span>
+                    до 30%
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" class="visually-hidden control-input">
-                    <span class="control-mark"></span>
-                    <span class="control-value">выше 30%</span>
+                    <input type="radio" value="over 30%" name="fat-percent" class="visually-hidden control-input">
+                    <span class="control-mark" tabindex="0"></span>
+                    выше 30%
                   </label>
                 </li>
               </ul>
@@ -221,60 +224,60 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" checked>
-                    <span class="control-mark empty-mark">
+                    <input class="control-input visually-hidden" name="fill" value="chocolate" type="checkbox" checked>
+                    <span class="control-mark" tabindex="0">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
                       </svg>
                     </span>
-                    <span class="control-value">шоколадные</span>
+                    шоколадные
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" checked>
-                    <span class="control-mark empty-mark">
+                    <input class="control-input visually-hidden" name="fill" value="sugar" type="checkbox" checked>
+                    <span class="control-mark" tabindex="0">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
                       </svg>
                     </span>
-                    <span class="control-value">сахарные посыпки</span>
+                    сахарные посыпки
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox">
-                    <span class="control-mark empty-mark">
+                    <input class="control-input visually-hidden" name="fill" value="fruits" type="checkbox">
+                    <span class="control-mark" tabindex="0">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
                       </svg>
                     </span>
-                    <span class="control-value">фрукты</span>
+                    фрукты
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox">
-                    <span class="control-mark empty-mark">
+                    <input class="control-input visually-hidden" name="fill" value="syrups" type="checkbox">
+                    <span class="control-mark" tabindex="0">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
                       </svg>
                     </span>
-                    <span class="control-value">сиропы</span>
+                    сиропы
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox">
-                    <span class="control-mark empty-mark">
+                    <input class="control-input visually-hidden" name="fill" value="jams" type="checkbox">
+                    <span class="control-mark" tabindex="0">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -282,7 +285,7 @@
                           fill="#2D3440" />
                       </svg>
                     </span>
-                    <span class="control-value">джемы</span>
+                    джемы
                   </label>
                 </li>
               </ul>
@@ -526,45 +529,45 @@
         <div class="pagination">
           <a href="#" class="button button-paginator-show-more">Показать еще</a>
 
-            <ul class="paginator">
-              <li class="paginator-item">
-                <a class="paginator-prev paginator-disabled">
-                  <span class="visually-hidden">Предыдущая страница</span>
-                  <svg class="paginator-prev-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                    viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                      fill="#2D3440" />
-                  </svg>
-                </a>
-              </li>
-              <li class="paginator-item">
-                <a href="#" class="paginator-link">1</a>
-              </li>
-              <li class="paginator-item">
-                <a href="#" class="paginator-link">2</a>
-              </li>
-              <li class="paginator-item">
-                <a class="paginator-link paginator-current">3</a>
-              </li>
-              <li class="paginator-item">
-                <a href="#" class="paginator-link">4</a>
-              </li>
-              <li class="paginator-item">
-                <a href="#" class="paginator-link">5</a>
-              </li>
-              <li class="paginator-item">
-                <a href="#" class="paginator-next">
-                  <span class="visually-hidden">Следующая страница</span>
-                  <svg class="paginator-prev-next" aria-hidden="true" focusable="false" width="16" height="16"
-                    viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                      fill="#2D3440" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <ul class="paginator">
+            <li class="paginator-item">
+              <a class="paginator-prev paginator-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+                <svg class="paginator-prev-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                    fill="#2D3440" />
+                </svg>
+              </a>
+            </li>
+            <li class="paginator-item">
+              <a href="#" class="paginator-link">1</a>
+            </li>
+            <li class="paginator-item">
+              <a href="#" class="paginator-link">2</a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link paginator-current">3</a>
+            </li>
+            <li class="paginator-item">
+              <a href="#" class="paginator-link">4</a>
+            </li>
+            <li class="paginator-item">
+              <a href="#" class="paginator-link">5</a>
+            </li>
+            <li class="paginator-item">
+              <a href="#" class="paginator-next">
+                <span class="visually-hidden">Следующая страница</span>
+                <svg class="paginator-prev-next" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                    fill="#2D3440" />
+                </svg>
+              </a>
+            </li>
+          </ul>
 
         </div>
       </div>
