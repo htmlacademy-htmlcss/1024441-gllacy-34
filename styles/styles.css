@@ -1257,9 +1257,9 @@ body {
   background-color: #FFFFFF;
 }
 
-/* .field:hover {
+.field:hover{
   border: 1px solid #2D3440;
-} */
+}
 
 .field:focus {
   border-color: #2D3440;
