@@ -815,6 +815,10 @@ body {
   margin-right: 16px;
 }
 
+.social-link{
+  display: block;
+}
+
 .telegramm-button,
 .vk-button,
 .youtube-button {
@@ -977,7 +981,7 @@ body {
   line-height: 22px;
   color: #565C66;
   margin-bottom: 20px;
-  max-width: 180px;
+  max-width: 190px;
   text-align: center;
 }
 
@@ -1114,11 +1118,18 @@ body {
   border-radius: 16px;
 }
 
+.excerpt-box{
+  padding: 32px;
+  display: block;
+  padding-bottom: 73px;
+  text-decoration: none;
+}
+
 .excerpt-subtitle {
   line-height: 20px;
   color: #565C66;
   margin: 0;
-  padding: 32px 0 12px 32px;
+  margin-bottom: 12px;
 }
 
 .excerpt-link {
@@ -1131,6 +1142,7 @@ body {
   line-height: 30px;
   color: #2D3440;
   margin: 0;
+  max-width: 303px;
 }
 
 .newsletter {
@@ -1389,19 +1401,31 @@ body {
 }
 
 .footer-links-list {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 8px 24px;
+  position: relative;
   list-style: none;
   padding: 0;
+  padding-left: 24px;
   margin: 0;
-  width: 356px;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 365px;
 }
 
-.footer-links-item {
-  margin-left: 24px;
+.footer-links-item:first-child::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url("../images/icons/heart-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-link {
+  display: block;
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
@@ -1415,7 +1439,6 @@ body {
   font-size: 12px;
   line-height: 16px;
   width: 193px;
-  margin-left: auto;
 }
 
 .htmlacademy-link {
@@ -1541,6 +1564,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs-item {
@@ -1612,10 +1636,6 @@ body {
   padding: 0;
   margin-right: 24px;
   margin-bottom: 16px;
-}
-
-.catalog-filter-group:last-child {
-  margin-right: 16px;
 }
 
 .catalog-filter-title {
