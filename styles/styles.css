@@ -159,7 +159,7 @@ body {
 }
 
 .catalog-link:hover .subcatalog,
-.catalog-link:focus-within .subcatalog  {
+.catalog-link:focus-within .subcatalog {
   display: block;
   position: absolute;
   padding: 8px 0;
@@ -456,7 +456,7 @@ body {
   display: flex;
 }
 
-.popover-basket-form{
+.popover-basket-form {
   display: flex;
   flex-wrap: wrap
 }
@@ -1042,31 +1042,29 @@ body {
 .advantages-title {
   font-weight: 900;
   font-size: 32px;
-  width: 100%;
   line-height: 46px;
   text-align: center;
   margin: 0;
+  margin-bottom: 56px;
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .advantages-item {
-  margin-bottom: 40px;
   position: relative;
 }
 
 .advantages-item-discription {
   color: #565C66;
   margin: 0;
-  margin-left: 104px;
-  max-width: 412px;
+  padding-left: 64px;
 }
 
 .advantages-ice-cream::before,
@@ -1079,8 +1077,8 @@ body {
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
-  top: 0;
-  left: 48px;
+  top: 5px;
+  left: 0;
 }
 
 .advantages-ice-cream::before {
@@ -1262,7 +1260,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.field:hover{
+.field:hover {
   border: 1px solid #2D3440;
 }
 
@@ -1649,9 +1647,7 @@ body {
 .range-toggle {
   width: 16px;
   height: 16px;
-  background-color: transparent;
   position: absolute;
-  border: none;
   cursor: pointer;
   background-color: #FCFCFC;
   border-radius: 50%;
@@ -1679,7 +1675,6 @@ body {
 
 .range-toggle:active {
   border-color: #2D3440;
-  ;
 }
 
 .select {
@@ -1774,15 +1769,15 @@ body {
   transform: translateX(50%);
 }
 
-.control:hover  .control-mark{
+.control:hover .control-mark {
   border-color: #FCFCFC;
 }
 
-.control-input[type="radio"]:disabled + .control-mark{
+.control-input[type="radio"]:disabled + .control-mark {
   opacity: 0.5;
 }
 
-.control:hover .control-input[type="radio"]:checked + .control-mark::before{
+.control:hover .control-input[type="radio"]:checked + .control-mark::before {
   background-color: #FCFCFC;
 }
 
@@ -1795,7 +1790,7 @@ body {
   border: 1px solid #242424;
 }
 
-.control:hover .control-mark{
+.control:hover .control-mark {
   border-color: #FCFCFC;
 }
 
@@ -1807,19 +1802,19 @@ body {
   display: block;
 }
 
-.control:hover .control-input[type="checkbox"]:checked + .control-mark .checked-icon{
+.control:hover .control-input[type="checkbox"]:checked + .control-mark .checked-icon {
   color: #FCFCFC;
 }
 
-.control-input[type="checkbox"]:disabled + .control-mark{
+.control-input[type="checkbox"]:disabled + .control-mark {
   opacity: 0.5;
 }
 
-.control-input[type="checkbox"]:disabled + .control-mark .checked-icon{
+.control-input[type="checkbox"]:disabled + .control-mark .checked-icon {
   opacity: 0.5;
 }
 
-.control-mark:focus{
+.control-mark:focus {
   outline: none;
   border-color: #FCFCFC;
 }
