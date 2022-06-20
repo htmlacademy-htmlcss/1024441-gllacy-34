@@ -574,9 +574,9 @@ body {
 }
 
 .gallery-content {
-  padding-top: 134px;
-  padding-bottom: 121px;
-  padding-left: 77px;
+  padding-top: 136px;
+    padding-bottom: 138px;
+    padding-left: 70px;
 }
 
 .gallery-column {
@@ -674,6 +674,8 @@ body {
 
 .gallery {
   align-self: flex-end;
+  padding-top: 21px;
+  padding-bottom: 26px;
 }
 
 .slider {
@@ -691,7 +693,7 @@ body {
 .pagination-social {
   display: flex;
   position: absolute;
-  bottom: -20px;
+  bottom: 0px;
   width: 100%;
   justify-content: space-between;
   padding: 0 9px;
