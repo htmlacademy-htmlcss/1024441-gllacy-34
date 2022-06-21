@@ -1627,7 +1627,9 @@ body {
   margin: 0;
 }
 
-.catalog-products-filter {}
+.catalog-products-filter {
+  margin-bottom: 44px;
+}
 
 .catalog-products-filter label {
   font-weight: 400;
@@ -1646,7 +1648,6 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 95px;
 }
 
 .catalog-filter-group {
@@ -1786,6 +1787,7 @@ body {
   gap: 91px 30px;
   list-style: none;
   padding: 0;
+  padding-top: 51px;
   margin: 0;
 }
 
