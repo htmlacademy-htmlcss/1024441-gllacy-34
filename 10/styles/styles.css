@@ -105,6 +105,7 @@ body {
 .catalog-products-filter .catalog-products-button {
   padding: 8px 52px;
   align-self: center;
+  margin-top: 10px;
 }
 
 .page-header {
@@ -119,9 +120,11 @@ body {
 
 .header-box {
   display: flex;
-  padding: 23px 0;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding: 24px 0;
+}
+
+.header-box-catalog {
+  margin-bottom: 32px;
 }
 
 .page-header-logo {
@@ -233,7 +236,7 @@ body {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 6px 16px;
   border-radius: 30px;
 }
 
@@ -260,7 +263,7 @@ body {
 .navigation-icon {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 2px;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -419,23 +422,27 @@ body {
 }
 
 .navigation-link-basket {
+  padding: 6px 0;
   padding-left: 38px;
+  padding-right: 16px;
 }
 
 .navigation-link-entry {
+  padding: 6px 0;
   padding-left: 38px;
+  padding-right: 16px;
 }
 
 .navigation-link-entry .navigation-icon {
   right: auto;
-  left: 17px;
+  left: 15px;
   top: 0;
   margin: auto 0;
 }
 
 .navigation-link-basket .navigation-icon {
   right: auto;
-  left: 17px;
+  left: 16px;
   top: 0;
   margin: auto 0;
 }
@@ -575,8 +582,8 @@ body {
 
 .gallery-content {
   padding-top: 136px;
-    padding-bottom: 138px;
-    padding-left: 70px;
+  padding-bottom: 138px;
+  padding-left: 70px;
 }
 
 .gallery-column {
@@ -673,7 +680,6 @@ body {
 }
 
 .gallery {
-  align-self: flex-end;
   padding-top: 21px;
   padding-bottom: 26px;
 }
@@ -693,7 +699,7 @@ body {
 .pagination-social {
   display: flex;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   justify-content: space-between;
   padding: 0 9px;
@@ -817,7 +823,7 @@ body {
   margin-right: 16px;
 }
 
-.social-link{
+.social-link {
   display: block;
 }
 
@@ -902,6 +908,8 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .banners-card {
@@ -1118,7 +1126,7 @@ body {
   border-radius: 16px;
 }
 
-.excerpt-box{
+.excerpt-box {
   padding: 32px;
   display: block;
   padding-bottom: 73px;
@@ -1557,7 +1565,7 @@ body {
 }
 
 .tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text{
+.tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
 
@@ -1619,7 +1627,9 @@ body {
   margin: 0;
 }
 
-.catalog-products-filter {}
+.catalog-products-filter {
+  margin-bottom: 44px;
+}
 
 .catalog-products-filter label {
   font-weight: 400;
@@ -1638,7 +1648,6 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 95px;
 }
 
 .catalog-filter-group {
@@ -1663,6 +1672,7 @@ body {
 
 .range-sclae {
   position: relative;
+  bottom: 1px;
   width: 164px;
   height: 2px;
   background-color: rgba(86, 92, 102, 0.3);
@@ -1682,16 +1692,16 @@ body {
   cursor: pointer;
   background-color: #FCFCFC;
   border-radius: 50%;
-  border: solid 5px #2D3440;
+  border: solid 6px #2D3440;
 }
 
 .toggle-min {
   top: -7px;
-  left: -10px;
+  left: -8px;
 }
 
 .toggle-max {
-  right: -14px;
+  right: -10px;
   top: -7px;
 }
 
@@ -1716,12 +1726,14 @@ body {
   border: none;
   font: inherit;
   width: 100%;
+  font-size: 14px;
+  line-height: 20px;
   border-radius: 20px;
   padding: 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
-  background-image: url(../images/icons/arrow-down.svg);
+  background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 1px center;
+  background-position: right 13px center;
   cursor: pointer;
   appearance: none;
 }
@@ -1745,9 +1757,19 @@ body {
   border-radius: 18px;
 }
 
+.catalog-filter-fat-percent .control-mark{
+  top: 1px;
+}
+
 .catalog-filter-item {
+  padding: 8px 0;
   margin-right: 16px;
-  padding: 8px;
+}
+.catalog-filter-fill{
+}
+
+.catalog-filter-fill .catalog-filter-item{
+  padding: 10px 0;
 }
 
 .catalog-filter-item:first-child {
@@ -1765,6 +1787,7 @@ body {
   gap: 91px 30px;
   list-style: none;
   padding: 0;
+  padding-top: 51px;
   margin: 0;
 }
 
@@ -1777,11 +1800,10 @@ body {
 
 .control-mark {
   position: absolute;
-  top: 2px;
   left: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #242424;
+  border: 1px solid #242424;
   border-radius: 3px;
 }
 
@@ -1796,7 +1818,8 @@ body {
   background-color: #2D3440;
   width: 6px;
   height: 6px;
-  top: 3px;
+  top: 4px;
+  right: 6px;
   transform: translateX(50%);
 }
 
