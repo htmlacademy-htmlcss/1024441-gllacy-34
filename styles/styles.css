@@ -1841,7 +1841,7 @@ body {
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 91px 30px;
+  gap: 40px 30px;
   list-style: none;
   padding: 0;
   margin: 0;
