@@ -118,6 +118,10 @@ body {
   margin: 0 auto;
 }
 
+.page-header-inner{
+  margin-bottom: 32px;
+}
+
 .header-box {
   display: flex;
   padding: 24px 0;
