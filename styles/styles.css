@@ -114,7 +114,7 @@ body {
 }
 
 .page-container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .navigation {
-  width: 1170px;
+  max-width: 1170px;
   display: flex;
   margin: 0 auto;
 }
