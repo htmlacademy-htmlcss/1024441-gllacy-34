@@ -995,7 +995,7 @@ body {
   position: relative;
 }
 
-.product-card::after{
+.product-card::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1014,11 +1014,6 @@ body {
   border-radius: 8px;
 }
 
-.product-title-link {
-  text-decoration: none;
-  color: #2D3440;
-}
-
 .product-card-title {
   margin: 0;
   text-align: center;
@@ -1031,7 +1026,10 @@ body {
 .product-card-image-link {
   display: flex;
   justify-content: center;
-  order: -2;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-card-image-wrapper {}
