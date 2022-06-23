@@ -1454,7 +1454,7 @@ body {
   justify-content: space-between;
 }
 
-.footer-inner::before{
+.footer-inner::before {
   content: "";
   position: absolute;
   top: -3px;
@@ -1463,7 +1463,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.social-footer{
+.social-footer {
   margin-right: 100px;
 }
 
@@ -1512,13 +1512,14 @@ body {
   width: 193px;
 }
 
-.copyright-imag{
+.copyright-imag {
   display: block;
 }
 
 .copyright-imag-wrapper {
   margin-bottom: 14px;
 }
+
 .copyright-content {
   margin: 0;
 }
@@ -1529,7 +1530,7 @@ body {
   color: #2D3440;
 }
 
-.htmlacademy-link::after{
+.htmlacademy-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2019,8 +2020,8 @@ body {
 
 .paginator-prev-icon {
   position: absolute;
-  right: 10px;
-  top: 3px;
+  right: 9px;
+  top: 1px;
 }
 
 .paginator-disabled {
@@ -2029,8 +2030,8 @@ body {
 
 .paginator-prev-next {
   position: absolute;
-  left: 10px;
-  top: 3px;
+  left: 5px;
+  top: 1px;
   transform: rotate(180deg);
 }
 
