@@ -1032,7 +1032,10 @@ body {
   color: inherit;
 }
 
-.product-card-image-wrapper {}
+.product-image-wrapper{}
+
+.product-card-image-wrapper {
+}
 
 .popular-card-image {
   object-fit: cover;
