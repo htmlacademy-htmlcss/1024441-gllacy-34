@@ -1025,14 +1025,17 @@ body {
 
 .product-card-image-link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
   text-decoration: none;
   color: inherit;
 }
 
-.product-card-image-wrapper {}
+.product-image-wrapper{}
+
+.product-card-image-wrapper {
+}
 
 .popular-card-image {
   object-fit: cover;
