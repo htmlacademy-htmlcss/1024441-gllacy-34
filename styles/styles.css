@@ -1000,7 +1000,7 @@ body {
   position: absolute;
   width: 100%;
   background-color: #FCFCFC;
-  bottom: 6px;
+  bottom: 2px;
   height: 281px;
   z-index: -1;
   border-radius: 8px;
@@ -1020,7 +1020,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 8px;
 }
 
 .product-card-image-link {
@@ -1030,11 +1029,7 @@ body {
   flex-wrap: wrap;
   text-decoration: none;
   color: inherit;
-}
-
-.product-image-wrapper{}
-
-.product-card-image-wrapper {
+  margin-bottom: 8px;
 }
 
 .popular-card-image {
@@ -1046,7 +1041,7 @@ body {
   margin: 0;
   line-height: 22px;
   color: #565C66;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   max-width: 190px;
   text-align: center;
 }
@@ -1059,6 +1054,9 @@ body {
 }
 
 .product-card-button {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
   margin-left: auto;
   padding: 9px;
   background-color: rgba(255, 47, 100, 1);
@@ -1087,7 +1085,7 @@ body {
 }
 
 .product-card-icon {
-  margin: auto -1px;
+  margin: auto 0;
 }
 
 .advantages {
@@ -1686,7 +1684,7 @@ body {
 }
 
 .catalog-products-filter {
-  margin-bottom: 44px;
+  margin-bottom: 28px;
 }
 
 .catalog-products-filter label {
@@ -1846,6 +1844,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .control {
@@ -1932,8 +1931,9 @@ body {
 
 .pagination {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 41px 0;
   margin-bottom: 40px;
 }
 
@@ -1951,7 +1951,9 @@ body {
   padding: 0 20px;
 }
 
-.paginator-item {}
+.paginator-item{
+  margin-right: 2px;
+}
 
 .paginator-link {
   font-weight: 400;
@@ -1959,7 +1961,7 @@ body {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 2px 6.5px;
   border-radius: 50px;
 }
 
