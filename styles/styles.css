@@ -590,7 +590,7 @@ body {
   margin-top: 11px;
   border: none;
   background-color: transparent;
-  background-image: url(../images/icons/cross.svg);
+  background-image: url("../images/icons/cross.svg");
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
@@ -613,6 +613,10 @@ body {
 
 .main-container {
   flex-grow: 1;
+}
+
+.main-inner {
+  margin-bottom: 40px;
 }
 
 .main-index {
@@ -851,16 +855,13 @@ body {
 }
 
 .social-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px 16px;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 104px;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 16px;
 }
 
 .social-link {
@@ -1443,19 +1444,27 @@ body {
 
 .contacts-link-form {}
 
-.page-footer {}
+.page-footer {
+  position: relative;
+}
+
+.page-footer::before{
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
 
 .footer-container {
   display: flex;
-  padding: 44px 0 48px 0;
+  padding: 48px 14px 57px 4px;
+  justify-content: space-between;
 }
 
-.social-footer {
-  margin-right: auto;
-}
-
-.footer-links {
-  margin: 0 auto;
+.social-footer{
+  margin-right: 100px;
 }
 
 .suppliers {
@@ -1466,7 +1475,7 @@ body {
 
 .footer-links-list {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: auto auto;
   gap: 8px 24px;
   position: relative;
   list-style: none;
@@ -1496,8 +1505,6 @@ body {
   color: #2D3440;
 }
 
-.footer-decorate {}
-
 .copyright {
   font-weight: 400;
   font-size: 12px;
@@ -1505,8 +1512,31 @@ body {
   width: 193px;
 }
 
+.copyright-imag{
+  display: block;
+}
+
+.copyright-imag-wrapper {
+  margin-bottom: 14px;
+}
+.copyright-content {
+  margin: 0;
+}
+
 .htmlacademy-link {
+  position: relative;
+  text-decoration: none;
   color: #2D3440;
+}
+
+.htmlacademy-link::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2D3440;
 }
 
 .modal-container {
@@ -1934,12 +1964,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 41px 0;
-  margin-bottom: 40px;
+  justify-content: space-between;
 }
 
-.button-paginator-show-more {
-  margin-left: auto;
-  margin-right: 340px;
+.pagination-space {
+  width: 152px;
 }
 
 .paginator {
@@ -1951,7 +1980,7 @@ body {
   padding: 0 20px;
 }
 
-.paginator-item{
+.paginator-item {
   margin-right: 2px;
 }
 
@@ -2008,11 +2037,3 @@ body {
 .paginator-disable {
   color: rgba(45, 52, 64, 0.5);
 }
-
-.page-footer {}
-
-.social-footer {}
-
-.social-list {}
-
-.social-item {}
