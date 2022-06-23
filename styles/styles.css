@@ -1025,9 +1025,9 @@ body {
 
 .product-card-image-link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
   text-decoration: none;
   color: inherit;
 }
