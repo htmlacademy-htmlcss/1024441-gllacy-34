@@ -1156,7 +1156,7 @@ body {
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
-  top: 5px;
+  top: 0;
   left: 0;
 }
 
@@ -1187,16 +1187,17 @@ body {
 .excerpt {
   background-image: url("../images/background/background-excerpt.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -9px -106px;
+  background-size: 115%;
+  background-color: #FCFCFC;
   width: 570px;
-  background-size: cover;
   border-radius: 16px;
 }
 
 .excerpt-box {
   padding: 32px;
   display: block;
-  padding-bottom: 73px;
+  padding-bottom: 67px;
   text-decoration: none;
 }
 
@@ -1223,7 +1224,8 @@ body {
 .newsletter {
   background-image: url("../images/background/background-border-newsletter.png");
   background-repeat: no-repeat;
-  background-position: -10px -12px;
+  background-size: cover;
+  background-position: -5px 0;
   color: #565C66;
   width: 570px;
   padding: 6px;
@@ -1235,7 +1237,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 26px;
-  padding-bottom: 28px;
   border-radius: 16px;
 }
 
@@ -1245,7 +1246,7 @@ body {
 
 .newsletter-field {
   flex-grow: 1;
-  margin-right: 18px;
+  max-width: 332px;
 }
 
 .newsletter-form .submit-form-button {
@@ -1617,18 +1618,17 @@ body {
 
 .form-label-icon {
   position: relative;
-  padding-right: 14px;
 }
 
 .tooltip {
   position: absolute;
-  width: 14px;
-  height: 14px;
 }
 
 .tooltip-toggle {
   border: none;
   display: block;
+  width: 14px;
+  height: 14px;
   background-color: transparent;
   padding: 0;
   margin: 0;
