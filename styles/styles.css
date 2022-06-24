@@ -983,6 +983,7 @@ body {
 
 .popular-product-list .product-card::after{
   z-index: 0;
+  bottom: 0;
 }
 
 .popular-product-list .product-card-image-link,
@@ -990,11 +991,15 @@ body {
   z-index: 1;
 }
 
-.popular-product-list .product-card-discriprion{
-  margin-bottom: 20px;
+.popular-product-list .product-card-price{
+  align-self: flex-end;
 }
 
-.popular .product-card {
+.popular-product-list .product-card-button{
+  bottom: 0;
+}
+
+.product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
