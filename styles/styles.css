@@ -1508,6 +1508,11 @@ body {
   background-position: center;
 }
 
+.footer-container .social-list {
+  margin-right: 100px;
+}
+
+
 .footer-link {
   display: block;
   text-decoration: none;
