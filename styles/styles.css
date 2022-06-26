@@ -127,10 +127,6 @@ body {
   padding: 24px 0;
 }
 
-.header-box-catalog {
-  margin-bottom: 32px;
-}
-
 .page-header-logo {
   margin-right: 16px;
 }
@@ -735,8 +731,6 @@ body {
   justify-content: space-between;
 }
 
-.social {}
-
 .slider-image-wrapper::after {
   content: "";
   position: absolute;
@@ -1167,8 +1161,6 @@ body {
   background-image: url("../images/icons/cow.svg");
 }
 
-.advantages-cow {}
-
 .advantages-leaf::before {
   background-image: url("../images/icons/leaf.svg");
 }
@@ -1329,8 +1321,6 @@ body {
   margin-bottom: 32px;
 }
 
-.appointment-phone {}
-
 .delivery-form .submit-form-button {
   margin: 0 auto;
 }
@@ -1429,7 +1419,6 @@ body {
 }
 
 .contacts .button{
-  margin-right: auto;
   margin-right: 13px;
 }
 
@@ -1877,8 +1866,6 @@ body {
   padding: 8px 0;
   margin-right: 16px;
 }
-
-.catalog-filter-fill {}
 
 .catalog-filter-fill .catalog-filter-item {
   padding: 10px 0;
