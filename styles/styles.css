@@ -1252,6 +1252,7 @@ body {
   background-image: url("../images/background/background-delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #FCFCFC;
   color: #565C66;
   border-radius: 16px;
 }
