@@ -49,11 +49,11 @@ body {
 }
 
 .body-creamy {
-  background-color: #69A9FF;
+  background-color: #69a9ff;
 }
 
 .body-caramel{
-  background-color: #FCC850;
+  background-color: #fcc850;
 }
 
 .visually-hidden {
@@ -69,12 +69,13 @@ body {
 
 .button {
   display: block;
+   font-family: "Inter", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  background-color: #FCFCFC;
-  color: #2D3440;
+  background-color: #fcfcfc;
+  color: #2d3440;
   text-decoration: none;
   padding: 12px 32px;
   border-radius: 25px;
@@ -83,24 +84,24 @@ body {
 }
 
 .submit-form-button {
-  color: #FCFCFC;
-  background-color: #FF2F64;
+  color: #fcfcfc;
+  background-color: #ff2f64;
   outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
 .catalog-products-button {
   background-color: rgba(252, 252, 252, 0.3);
   font-size: 14px;
-  outline: 2px solid #FCFCFC;
+  outline: 2px solid #fcfcfc;
 }
 
 .catalog-products-button:hover {
   outline: 2px solid rgba(252, 252, 252, 0.3);
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
 
 .catalog-products-button:focus {
-  outline: 2px solid #2D3440;
+  outline: 2px solid #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
 }
 
@@ -120,7 +121,7 @@ body {
 }
 
 .page-header {
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .page-container {
@@ -177,7 +178,7 @@ body {
   position: absolute;
   padding: 8px 0;
   top: 38px;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   width: 140px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
@@ -192,7 +193,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   padding: 6px 16px;
-  color: #2D3440;
+  color: #2d3440;
   text-decoration: none;
 }
 
@@ -244,7 +245,7 @@ body {
   position: relative;
   text-align: center;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
   text-decoration: none;
   padding: 6px 16px;
   border-radius: 30px;
@@ -291,14 +292,14 @@ body {
 
 .navigation-link-current {
   background-color: rgba(255, 74, 120, 1);
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .contact-phone-header {
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
-  color: #2D3440;
+  color: #2d3440;
   text-decoration: none;
   padding: 5px 0;
 }
@@ -314,7 +315,7 @@ body {
 
 .popover {
   position: absolute;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-radius: 4px;
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 400;
@@ -355,14 +356,14 @@ body {
 .input-search {
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   outline: none;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
 
 .close-button {
@@ -447,7 +448,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .popover-entry .button {
@@ -578,14 +579,14 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #B9B9B9;
+  color: #b9b9b9;
 }
 
 .product-basket-price {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #2D3440;
+  color: #2d3440;
   align-self: center;
 }
 
@@ -624,7 +625,7 @@ body {
 }
 
 .main-index {
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .gallery-content {
@@ -654,7 +655,7 @@ body {
 
 .gallery-discription-active {
   display: flex;
-  min-width: 470px;
+  max-width: 470px;
 }
 
 .gallery-title {
@@ -680,13 +681,13 @@ body {
 .button-order:hover,
 .button-paginator-show-more:hover {
   background-color: rgba(252, 252, 252, 0.4);
-  outline: 4px solid #FCFCFC;
+  outline: 4px solid #fcfcfc;
 }
 
 .button-order:focus,
 .button-paginator-show-more:focus {
-  background-color: #FCFCFC;
-  outline: 2px solid #2D3440;
+  background-color: #fcfcfc;
+  outline: 2px solid #2d3440;
 }
 
 .button-order:active,
@@ -695,9 +696,9 @@ body {
 }
 
 .button-order-disable {
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  color: #B9B9B9;
+  color: #b9b9b9;
 }
 
 .slider {
@@ -705,15 +706,15 @@ body {
 }
 
 .body-strawberry .slider-image-wrapper::after{
-  background-color: #FFCBD8;
+  background-color: #ffcbd8;
 }
 
 .body-creamy .slider-image-wrapper::after{
-  background-color: #9FC8FF;
+  background-color: #9fc8ff;
 }
 
 .body-caramel .slider-image-wrapper::after{
-  background-color: #FCDC92;
+  background-color: #fcdc92;
 }
 
 .slider-item {
@@ -774,24 +775,24 @@ body {
   border: none;
   border-radius: 26px;
   cursor: pointer;
-  outline: 2px solid #FCFCFC;
+  outline: 2px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.3);
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .slider-button:hover {
-  background: #FCFCFC;
-  color: #2D3440;
+  background: #fcfcfc;
+  color: #2d3440;
 }
 
 .slider-button:focus {
-  color: #2D3440;
-  outline: 2px solid #2D3440;
+  color: #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .slider-button:active {
   outline: none;
-  color: #2D3440;
+  color: #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
 }
 
@@ -838,7 +839,7 @@ body {
 }
 
 .paginator-button-active {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
 
 .paginator-button-disable {
@@ -847,12 +848,12 @@ body {
 
 .slider-paginator-button:hover {
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 1px solid #FCFCFC;
+  outline: 1px solid #fcfcfc;
 }
 
 .slider-paginator-button:focus {
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 1px solid #2D3440;
+  outline: 1px solid #2d3440;
 }
 
 .social-list {
@@ -876,7 +877,7 @@ body {
 .youtube-button {
   height: 100%;
   width: 100%;
-  color: #FCFCFC;
+  color: #fcfcfc;
   border-radius: 24px;
   outline: 2px solid rgba(252, 252, 252, 0.3);
 }
@@ -888,14 +889,14 @@ body {
 .social-link:hover .telegramm-button,
 .social-link:hover .vk-button,
 .social-link:hover .youtube-button {
-  background-color: #2D3440;
+  background-color: #2d3440;
 }
 
 .social-link:focus .telegramm-button,
 .social-link:focus .vk-button,
 .social-link:focus .youtube-button {
-  background-color: #2D3440;
-  outline: 2px solid #2D3440;
+  background-color: #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .social-link:active {
@@ -942,7 +943,7 @@ body {
 }
 
 .banners-wrapper {
-  background-color: #FF7799;
+  background-color: #ff7799;
   width: 570px;
   border-radius: 16px;
   padding: 36px;
@@ -1022,7 +1023,7 @@ body {
   position: absolute;
   width: 100%;
   height: calc(100% - 51px);
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   bottom: 2px;
   z-index: -1;
   border-radius: 8px;
@@ -1085,25 +1086,25 @@ body {
   border-radius: 35px;
   max-width: 32px;
   max-height: 32px;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .product-card-button:hover {
   color: rgba(45, 52, 64, 1);
-  outline: 2px solid #FF2F64;
+  outline: 2px solid #ff2f64;
   background-color: rgba(252, 252, 252, 0.3);
 }
 
 .product-card-button:focus {
-  background-color: #FF2F64;
-  color: #FCFCFC;
-  outline: 1px solid #2D3440;
+  background-color: #ff2f64;
+  color: #fcfcfc;
+  outline: 1px solid #2d3440;
 }
 
 .product-card-button:active {
   color: rgba(45, 52, 64, 1);
   background-color: rgba(255, 203, 216, 1);
-  outline: 2px solid #FF2F64;
+  outline: 2px solid #ff2f64;
 }
 
 .product-card-icon {
@@ -1124,7 +1125,7 @@ body {
 }
 
 .advantages-box-wrapper {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 16px;
   padding: 56px 40px;
 }
@@ -1152,7 +1153,7 @@ body {
 }
 
 .advantages-item-discription {
-  color: #565C66;
+  color: #565c66;
   margin: 0;
   padding-left: 64px;
 }
@@ -1198,7 +1199,7 @@ body {
   background-repeat: no-repeat;
   background-position: -9px -106px;
   background-size: 115%;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   width: 570px;
   border-radius: 16px;
 }
@@ -1212,7 +1213,7 @@ body {
 
 .excerpt-subtitle {
   line-height: 20px;
-  color: #565C66;
+  color: #565c66;
   margin: 0;
   margin-bottom: 12px;
 }
@@ -1225,7 +1226,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #2D3440;
+  color: #2d3440;
   margin: 0;
   max-width: 303px;
 }
@@ -1235,7 +1236,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -5px 0;
-  color: #565C66;
+  color: #565c66;
   width: 570px;
   padding: 6px;
   border-radius: 16px;
@@ -1270,7 +1271,7 @@ body {
   background-image: url("../images/background/background-delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   color: #565C66;
   border-radius: 16px;
 }
@@ -1284,7 +1285,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: #2D3440;
+  color: #2d3440;
   margin: 0;
   margin-bottom: 24px;
 }
@@ -1297,13 +1298,13 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .delivery-form {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   padding: 40px;
   padding-bottom: 42px;
   width: 500px;
@@ -1351,31 +1352,31 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   padding: 14px 16px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .field:hover {
-  border: 1px solid #2D3440;
+  border: 1px solid #2d3440;
 }
 
 .field:focus {
-  border-color: #2D3440;
-  outline: 2px solid #2D3440;
+  border-color: #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .field:invalid {
-  border: 1px solid #EA5454;
+  border: 1px solid #ea5454;
 }
 
 .field:invalid:hover {
-  outline: 2px solid #EA5454;
+  outline: 2px solid #ea5454;
 }
 
 .field:disabled {
-  background: #E7E7E7;
-  border: 1px solid #B9B9B9;
+  background: #e7e7e7;
+  border: 1px solid #b9b9b9;
   opacity: 0.60;
 }
 
@@ -1395,7 +1396,7 @@ body {
 }
 
 .contacts-wrapper {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   width: 343px;
   padding: 40px;
   border-radius: 8px;
@@ -1417,7 +1418,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .contact-addres-phone {
@@ -1426,7 +1427,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .work-time {
@@ -1443,32 +1444,28 @@ body {
 
 .submit-form-button:hover {
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 4px solid #FF2F64;
-  color: #2D3440;
+  outline: 4px solid #ff2f64;
+  color: #2d3440;
 }
 
 .submit-form-button:focus {
-  outline: 2px solid #2D3440;
+  outline: 2px solid #2d3440;
 }
 
 .submit-form-button:active {
-  outline: 2px solid #2D3440;
+  outline: 2px solid #2d3440;
   background-color: rgba(255, 47, 100, 1);
   color: rgba(252, 252, 252, 1);
 }
 
 .submit-form-button-disable {
-  background-color: #B9B9B9;
-  color: #565C66;
+  background-color: #b9b9b9;
+  color: #565c66;
   outline: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .page-footer {
   position: relative;
-}
-
-.main-footer .social-footer{
-  margin-right: 0;
 }
 
 .footer-container {
@@ -1484,10 +1481,6 @@ body {
   width: 100%;
   height: 1px;
   background-color: rgba(252, 252, 252, 0.3);
-}
-
-.social-footer {
-  margin-right: 100px;
 }
 
 .suppliers {
@@ -1530,7 +1523,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .copyright {
@@ -1555,7 +1548,7 @@ body {
 .htmlacademy-link {
   position: relative;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .htmlacademy-link::after {
@@ -1565,7 +1558,7 @@ body {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #2D3440;
+  background-color: #2d3440;
 }
 
 .modal-container {
@@ -1583,7 +1576,7 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
 }
@@ -1669,14 +1662,14 @@ body {
 }
 
 .tooltip-toggle .tooltip-icon:hover {
-  outline: solid 1px #2D3440;
+  outline: solid 1px #2d3440;
 }
 
 .tooltip-text {
   display: none;
   position: absolute;
   bottom: 100%;
-  color: #FCFCFC;
+  color: #fcfcfc;
   background-color: rgba(255, 119, 153, 1);
   text-transform: none;
   font-size: 14px;
@@ -1720,11 +1713,11 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .breadcrumbs-link-border {
-  border-bottom: 1px solid #2D3440;
+  border-bottom: 1px solid #2d3440;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -1747,7 +1740,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: #2D3440;
+  color: #2d3440;
   margin: 0;
 }
 
@@ -1759,14 +1752,14 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .catalog-products-filter legend {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .catalog-filter {
@@ -1814,9 +1807,9 @@ body {
   height: 16px;
   position: absolute;
   cursor: pointer;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-radius: 50%;
-  border: solid 6px #2D3440;
+  border: solid 6px #2d3440;
 }
 
 .toggle-min {
@@ -1830,16 +1823,16 @@ body {
 }
 
 .range-toggle:hover {
-  border-color: #FCFCFC;
-  background-color: #2D3440;
+  border-color: #fcfcfc;
+  background-color: #2d3440;
 }
 
 .range-toggle:focus {
-  outline: 2px solid #FCFCFC;
+  outline: 2px solid #fcfcfc;
 }
 
 .range-toggle:active {
-  border-color: #2D3440;
+  border-color: #2d3440;
 }
 
 .select {
@@ -1868,7 +1861,7 @@ body {
 
 .select-control:focus {
   background-color: rgba(252, 252, 252, 0.4);
-  outline: 2px solid #FCFCFC;
+  outline: 2px solid #fcfcfc;
 }
 
 .catalog-filter-list {
@@ -1937,7 +1930,7 @@ body {
   position: absolute;
   content: "";
   border-radius: 50%;
-  background-color: #2D3440;
+  background-color: #2d3440;
   width: 6px;
   height: 6px;
   top: 4px;
@@ -1946,7 +1939,7 @@ body {
 }
 
 .control:hover .control-mark {
-  border-color: #FCFCFC;
+  border-color: #fcfcfc;
 }
 
 .control-input[type="radio"]:disabled + .control-mark {
@@ -1954,7 +1947,7 @@ body {
 }
 
 .control:hover .control-input[type="radio"]:checked + .control-mark::before {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
 
 .checked-icon {
@@ -1967,7 +1960,7 @@ body {
 }
 
 .control:hover .control-mark {
-  border-color: #FCFCFC;
+  border-color: #fcfcfc;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1979,7 +1972,7 @@ body {
 }
 
 .control:hover .control-input[type="checkbox"]:checked + .control-mark .checked-icon {
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .control-input[type="checkbox"]:disabled + .control-mark {
@@ -1992,7 +1985,7 @@ body {
 
 .control-mark:focus {
   outline: none;
-  border-color: #FCFCFC;
+  border-color: #fcfcfc;
 }
 
 .pagination {
@@ -2036,16 +2029,16 @@ body {
 
 .paginator-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  outline: 1px solid #2D3440;
+  outline: 1px solid #2d3440;
 }
 
 .paginator-link:active {
-  outline: 1px solid #FCFCFC;
+  outline: 1px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.5);
 }
 
 .paginator-current {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
 
 .paginator-prev,
