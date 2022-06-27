@@ -48,7 +48,7 @@ body {
   background-color: #feafc3;
 }
 
-.body-creamy{
+.body-creamy {
   background-color: #69A9FF;
 }
 
@@ -704,6 +704,18 @@ body {
   display: flex;
 }
 
+.body-strawberry .slider-image-wrapper::after{
+  background-color: #FFCBD8;
+}
+
+.body-creamy .slider-image-wrapper::after{
+  background-color: #9FC8FF;
+}
+
+.body-caramel .slider-image-wrapper::after{
+  background-color: #FCDC92;
+}
+
 .slider-item {
   max-width: 100px;
   transform: scale(0.3);
@@ -743,7 +755,6 @@ body {
   position: absolute;
   width: 312px;
   height: 312px;
-  background-color: #FFCBD8;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
