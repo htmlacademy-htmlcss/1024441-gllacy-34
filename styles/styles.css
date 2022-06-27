@@ -42,7 +42,18 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #242424;
+}
+
+.body-strawberry{
   background-color: #feafc3;
+}
+
+.body-creamy{
+  background-color: #69A9FF;
+}
+
+.body-caramel{
+  background-color: #FCC850;
 }
 
 .visually-hidden {
@@ -109,7 +120,6 @@ body {
 }
 
 .page-header {
-  background-color: #feafc3;
   color: #2D3440;
 }
 
@@ -289,7 +299,6 @@ body {
   line-height: 20px;
   font-size: 16px;
   color: #2D3440;
-  background-color: #feafc3;
   text-decoration: none;
   padding: 5px 0;
 }
@@ -501,7 +510,6 @@ body {
 
 .popover-basket-form {
   display: flex;
-  flex-wrap: wrap
 }
 
 .popover-basket-title {
@@ -616,7 +624,6 @@ body {
 }
 
 .main-index {
-  background-color: #feafc3;
   color: #2D3440;
 }
 
