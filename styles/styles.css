@@ -1449,6 +1449,10 @@ body {
   position: relative;
 }
 
+.main-footer .social-footer{
+  margin-right: 0;
+}
+
 .footer-container {
   display: flex;
   padding: 48px 14px 57px 4px;
