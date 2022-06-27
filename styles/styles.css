@@ -1003,9 +1003,9 @@ body {
   content: "";
   position: absolute;
   width: 100%;
+  height: calc(100% - 51px);
   background-color: #FCFCFC;
   bottom: 2px;
-  height: 281px;
   z-index: -1;
   border-radius: 8px;
 }
