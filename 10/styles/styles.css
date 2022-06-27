@@ -127,10 +127,6 @@ body {
   padding: 24px 0;
 }
 
-.header-box-catalog {
-  margin-bottom: 32px;
-}
-
 .page-header-logo {
   margin-right: 16px;
 }
@@ -697,26 +693,6 @@ body {
   color: #B9B9B9;
 }
 
-.slider-item-focused {
-  position: relative;
-  opacity: 1;
-}
-
-.slider-item-two {
-}
-
-.slider-item-three {
-}
-
-.slider-image-wrapper {
-  position: relative;
-}
-
-.gallery {
-  padding-top: 21px;
-  padding-bottom: 26px;
-}
-
 .slider {
   display: flex;
 }
@@ -726,6 +702,25 @@ body {
   transform: scale(0.3);
   opacity: 0.5;
 
+}
+
+.slider-item-focused {
+  position: relative;
+  opacity: 1;
+  margin-right: 30px;
+}
+
+.slider-item-two {
+  margin-right: 42px;
+}
+
+.slider-image-wrapper {
+  position: relative;
+}
+
+.gallery {
+  padding-top: 21px;
+  padding-bottom: 26px;
 }
 
 .pagination-social {
@@ -805,10 +800,11 @@ body {
 
 .slider-paginator {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
-  top: 50px;
 }
 
 .slider-paginator-item:not(:last-child) {
@@ -853,13 +849,15 @@ body {
 
 .social-link {
   display: block;
+  height: 24px;
+  width: 24px;
 }
 
 .telegramm-button,
 .vk-button,
 .youtube-button {
-  height: 24px;
-  width: 24px;
+  height: 100%;
+  width: 100%;
   color: #FCFCFC;
   border-radius: 24px;
   outline: 2px solid rgba(252, 252, 252, 0.3);
@@ -962,7 +960,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   margin: 0 auto;
-  margin-bottom: 107px;
+  margin-bottom: 56px;
   max-width: 580px;
   text-align: center;
 }
@@ -974,6 +972,24 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.popular-product-list .product-card::after {
+  z-index: 0;
+  bottom: 0;
+}
+
+.popular-product-list .product-card-image-link,
+.popular-product-list .product-card-wrapper {
+  z-index: 1;
+}
+
+.popular-product-list .product-card-price {
+  align-self: flex-end;
+}
+
+.popular-product-list .product-card-button {
+  bottom: 0;
 }
 
 .product-card {
@@ -1133,7 +1149,7 @@ body {
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
-  top: 5px;
+  top: 0;
   left: 0;
 }
 
@@ -1144,8 +1160,6 @@ body {
 .advantages-cow::before {
   background-image: url("../images/icons/cow.svg");
 }
-
-.advantages-cow {}
 
 .advantages-leaf::before {
   background-image: url("../images/icons/leaf.svg");
@@ -1164,16 +1178,17 @@ body {
 .excerpt {
   background-image: url("../images/background/background-excerpt.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -9px -106px;
+  background-size: 115%;
+  background-color: #FCFCFC;
   width: 570px;
-  background-size: cover;
   border-radius: 16px;
 }
 
 .excerpt-box {
   padding: 32px;
   display: block;
-  padding-bottom: 73px;
+  padding-bottom: 67px;
   text-decoration: none;
 }
 
@@ -1200,7 +1215,8 @@ body {
 .newsletter {
   background-image: url("../images/background/background-border-newsletter.png");
   background-repeat: no-repeat;
-  background-position: -10px -12px;
+  background-size: cover;
+  background-position: -5px 0;
   color: #565C66;
   width: 570px;
   padding: 6px;
@@ -1212,7 +1228,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 26px;
-  padding-bottom: 28px;
   border-radius: 16px;
 }
 
@@ -1222,7 +1237,7 @@ body {
 
 .newsletter-field {
   flex-grow: 1;
-  margin-right: 18px;
+  max-width: 332px;
 }
 
 .newsletter-form .submit-form-button {
@@ -1237,6 +1252,7 @@ body {
   background-image: url("../images/background/background-delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #FCFCFC;
   color: #565C66;
   border-radius: 16px;
 }
@@ -1306,8 +1322,6 @@ body {
   margin-bottom: 32px;
 }
 
-.appointment-phone {}
-
 .delivery-form .submit-form-button {
   margin: 0 auto;
 }
@@ -1348,13 +1362,14 @@ body {
 }
 
 .form-label {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  line-height: 20px;
 }
 
 .contacts {
   background-image: url("../images/background/background-contacts.jpg");
   background-repeat: no-repeat;
-  background-position: right 43%;
+  background-position: right 50%;
   background-size: cover;
   color: #565C66;
   padding: 64px;
@@ -1368,23 +1383,23 @@ body {
   border-radius: 8px;
 }
 
-.contacts-wrapper p {
+.contacts-text {
   margin: 0;
+  margin-bottom: 12px;
+  max-width: 203px;
 }
 
 .contacts-addres {
-  margin-top: 12px;
-  margin-bottom: 24px;
   font-style: normal;
+  margin-bottom: 24px;
 }
 
-.about-text {
+.contacts-addres p{
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
-  margin-top: 12px;
-  margin-bottom: 24px;
 }
 
 .contact-addres-phone {
@@ -1394,17 +1409,18 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
-  margin-top: 12px;
 }
 
 .work-time {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
-.contacts .button {
-  margin-top: 32px;
+.contacts .button{
+  margin-right: 13px;
 }
 
 .submit-form-button:hover {
@@ -1428,8 +1444,6 @@ body {
   color: #565C66;
   outline: 4px solid rgba(185, 185, 185, 0.3);
 }
-
-.contacts-link-form {}
 
 .page-footer {
   position: relative;
@@ -1483,6 +1497,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.footer-container .social-list {
+  margin-right: 100px;
+}
+
 
 .footer-link {
   display: block;
@@ -1594,18 +1613,27 @@ body {
 
 .form-label-icon {
   position: relative;
-  padding-right: 14px;
 }
 
 .tooltip {
   position: absolute;
-  width: 14px;
-  height: 14px;
+}
+
+.appointment-form-date .tooltip{
+  top: 2px;
+  left: 44px;
+}
+
+.appointment-form-adres .tooltip{
+  top: 2px;
+  left: 56px;
 }
 
 .tooltip-toggle {
   border: none;
   display: block;
+  width: 14px;
+  height: 14px;
   background-color: transparent;
   padding: 0;
   margin: 0;
@@ -1839,8 +1867,6 @@ body {
   padding: 8px 0;
   margin-right: 16px;
 }
-
-.catalog-filter-fill {}
 
 .catalog-filter-fill .catalog-filter-item {
   padding: 10px 0;
