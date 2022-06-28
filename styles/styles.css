@@ -1363,15 +1363,17 @@ body {
 
 .field:focus {
   border-color: #2d3440;
-  outline: 2px solid #2d3440;
+  outline: 1px solid #2d3440;
 }
 
-.field:invalid {
+.field:focus:invalid{
   border: 1px solid #ea5454;
+  outline: transparent;
 }
 
 .field:invalid:hover {
-  outline: 2px solid #ea5454;
+  border-color:#ea5454;
+  box-shadow: 0 0 0 1px #ea5454;;
 }
 
 .field:disabled {

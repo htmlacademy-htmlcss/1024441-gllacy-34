@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -79,12 +80,12 @@
                   <p class="field-group">
                     <label class="visually-hidden" for="auth-login">Логин</label>
                     <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
-                      value="email@example.com">
+                      value="email@example.com" required>
                   </p>
                   <p class="field-group">
                     <label class="visually-hidden" for="auth-password">Пароль</label>
                     <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
-                      value="1234567">
+                      value="1234567" required>
                   </p>
                   <button class="button submit-form-button" type="submit">Войти</button>
                   <div class="entry-links">
@@ -430,7 +431,7 @@
                 ерунды.
                 Честно =)</label>
               <input class="field newsletter-field" id="newsletter-email" placeholder="email@example.com" type="email"
-                name="newsletter-email">
+                name="newsletter-email" aria-required="true" required>
               <button class="button submit-form-button" type="submit">Отправить</button>
             </form>
           </section>
@@ -464,12 +465,12 @@
                     свяжемся с вами для подтверждения</span>
                 </span>
               </span>
-              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020" required>
             </p>
             <p class="field-group appointment-form-phone">
               <label class="form-label" for="appointment-phone">Телефон</label>
               <input class="field" type="text" id="appointment-phone" name="appointment-phone"
-                placeholder="+7 800 999-00-00">
+                placeholder="+7 800 999-00-00" required>
             </p>
             <p class="field-group appointment-form-adres">
               <span class="form-label form-label-icon">
@@ -488,7 +489,7 @@
                 </span>
               </span>
               <input class="field" type="text" id="appointment-adres" name="appointment-addres"
-                placeholder="ул. Большая Конюшенная, 19/8">
+                placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="button submit-form-button" type="submit">Отправить</button>
           </form>
