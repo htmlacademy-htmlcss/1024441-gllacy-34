@@ -50,6 +50,7 @@
             </li>
             <li class="navigation-item navigation-item-search">
               <a href="#" class="navigation-link navigation-link-search">
+                <h2 class="visually-hidden">Поиск</h2>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                   viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -117,7 +118,9 @@
                         <p class="price-per-kg">1 кг х 310 ₽</p>
                       </div>
                       <b class="product-basket-price">310 ₽</b>
-                      <button class="basket-button-close" type="button"></button>
+                      <button class="basket-button-close" type="button">
+                        <span class="visually-hidden">Убрать позицию</span>
+                      </button>
                     </li>
                     <li class="basket-item">
                       <div class="basket-image-wrapper">
@@ -128,7 +131,9 @@
                         <p class="price-per-kg">1,5 кг х 320 ₽</p>
                       </div>
                       <b class="product-basket-price">480 ₽</b>
-                      <button class="basket-button-close" type="button"></button>
+                      <button class="basket-button-close" type="button">
+                        <span class="visually-hidden">Убрать позицию</span>
+                      </button>
                     </li>
                   </ol>
                   <button class="button submit-form-button" type="submit">Оформить заказ</button>
@@ -359,8 +364,8 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам." class="popular-card-image"
-                    width="270" height="184">
+                  <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам."
+                    class="popular-card-image" width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Бабл-гам</h3>
               </a>
@@ -465,7 +470,8 @@
                     свяжемся с вами для подтверждения</span>
                 </span>
               </span>
-              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020" required>
+              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020"
+                required>
             </p>
             <p class="field-group appointment-form-phone">
               <label class="form-label" for="appointment-phone">Телефон</label>
@@ -583,23 +589,23 @@
           <p class="field-group">
             <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
             <input class="feedback-form-field field" id="feedback-name" name="feedback-name" type="text"
-              placeholder="Имя и фамилия">
+              placeholder="Имя и фамилия" required>
           </p>
           <p class="field-group">
             <label class="visually-hidden" for="email">Email</label>
-            <input class="feedback-form-field field" type="text" id="email" name="email"
-              placeholder="email@example.com">
+            <input class="feedback-form-field field" type="text" id="email" name="email" placeholder="email@example.com"
+              required>
           </p>
-          <p class="field-group">
+          <p class="field-group field-group-message">
             <label class="visually-hidden" for="messege">Введите сообщение в свободной форме</label>
             <textarea class="feedback-form-field field feedback-form-field-messege" name="messege" id="messege"
-              cols="30" rows="7" placeholder="В свободной форме"></textarea>
+               placeholder="В свободной форме" required></textarea>
           </p>
+          <button class="button submit-form-button" type="submit">Отправить</button>
         </form>
         <button class="close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <button class="button submit-form-button" type="submit">Отправить</button>
       </div>
     </div>
   </body>
