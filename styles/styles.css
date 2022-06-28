@@ -793,9 +793,9 @@ body {
 
 .slider-item {
   max-width: 100px;
-  -webkit-transform: scale(0.3);
-  -ms-transform: scale(0.3);
-  transform: scale(0.3);
+  -webkit-transform: scale(0.32) translateY(15px);
+  -ms-transform: scale(0.32) translateY(15px);
+  transform: scale(0.32) translateY(15px);
   opacity: 0.5;
 
 }
@@ -803,11 +803,11 @@ body {
 .slider-item-focused {
   position: relative;
   opacity: 1;
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .slider-item-two {
-  margin-right: 42px;
+  margin-right: 41px;
 }
 
 .slider-image-wrapper {
@@ -855,10 +855,9 @@ body {
   position: relative;
   width: 38px;
   height: 38px;
-  border: none;
+  border: 2px solid #fcfcfc;
   border-radius: 26px;
   cursor: pointer;
-  outline: 2px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.3);
   color: #fcfcfc;
 }
@@ -897,8 +896,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 112%;
-  right: -19px;
+  width: 115%;
+  left: -20px;
 }
 
 .slider-button-icon {
@@ -1733,6 +1732,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(45, 52, 64, 0.3);
+  z-index: 1;
 }
 
 .modal {
@@ -1750,19 +1750,21 @@ body {
 }
 
 .modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   width: 100%;
 }
 
-.modal-form .field-group{
+.modal-form .field-group {
   margin-bottom: 16px;
   width: 100%;
 }
 
-.modal-form .field{
-  line-height: 20px;
+.modal-form .field {
+  line-height: 18px;
 }
 
 .modal-feedback {
@@ -1791,7 +1793,7 @@ body {
   height: 20px;
 }
 
-.modal-form .field-group-message{
+.modal-form .field-group-message {
   margin-bottom: 32px;
 }
 
@@ -2148,21 +2150,21 @@ body {
   background-color: #fcfcfc;
 }
 
-.control-input[type="radio"]:focus  + .control-mark::before{
+.control-input[type="radio"]:focus + .control-mark::before {
   background-color: #fcfcfc;
 }
 
-.control-input[type="radio"]:focus  + .control-mark{
+.control-input[type="radio"]:focus + .control-mark {
   border-color: #fcfcfc;
 }
 
-.control:focus .control-mark{
+.control:focus .control-mark {
   border-color: #fcfcfc;
 }
 
 .checked-icon {
   display: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .control-input[type="checkbox"] + .control-mark {
@@ -2193,11 +2195,11 @@ body {
   opacity: 0.5;
 }
 
-.control-input[type="checkbox"]:focus + .control-mark{
+.control-input[type="checkbox"]:focus + .control-mark {
   border-color: #fcfcfc;
 }
 
-.control-input[type="checkbox"]:focus + .control-mark .checked-icon{
+.control-input[type="checkbox"]:focus + .control-mark .checked-icon {
   color: #fcfcfc;
 }
 
@@ -2240,7 +2242,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
   text-decoration: none;
   padding: 2px 6.5px;
   border-radius: 50px;
