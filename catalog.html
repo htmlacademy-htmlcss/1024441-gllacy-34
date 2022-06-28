@@ -4,14 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="body-strawberry">
     <header class="page-header page-header-inner">
+      <h1 class="visually-hidden">GllacyShop</h1>
       <div class="page-container header-box">
         <a href="#" class="page-header-logo">
-          <img class="header-logo" src="images/logo.svg" alt="Логотип компании 'Gllacy Shop'" width="137" height="56">
+          <img class="header-logo" src="images/logo.svg" alt="Логотип компании 'Gllacy Shop'." width="137" height="56">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -48,6 +50,7 @@
               <a href="tel:+78005558628" class="contact-phone-header">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item navigation-item-search">
+              <h2 class="visually-hidden">Поиск</h2>
               <a href="#" class="navigation-link navigation-link-search">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                   viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -80,12 +83,12 @@
                   <p class="field-group">
                     <label class="visually-hidden" for="auth-login">Логин</label>
                     <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
-                      value="email@example.com">
+                      value="email@example.com" required>
                   </p>
                   <p class="field-group">
                     <label class="visually-hidden" for="auth-password">Пароль</label>
                     <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
-                      value="1234567">
+                      value="1234567" required>
                   </p>
                   <button class="button submit-form-button" type="submit">Войти</button>
                   <div class="entry-links">
@@ -110,25 +113,29 @@
                   <ol class="basket-list">
                     <li class="basket-item">
                       <div class="basket-image-wrapper">
-                        <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина">
+                        <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина.">
                       </div>
                       <div class="basket-discription">
                         <h3 class="basket-item-title">Малинка</h3>
                         <p class="price-per-kg">1 кг х 310 ₽</p>
                       </div>
                       <b class="product-basket-price">310 ₽</b>
-                      <button class="basket-button-close"></button>
+                      <button class="basket-button-close" type="button">
+                        <span class="visually-hidden">Убрать позицию</span>
+                      </button>
                     </li>
                     <li class="basket-item">
                       <div class="basket-image-wrapper">
-                        <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам">
+                        <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам.">
                       </div>
                       <div class="basket-discription">
                         <h3 class="basket-item-title">Бабл-гам</h3>
                         <p class="price-per-kg">1,5 кг х 320 ₽</p>
                       </div>
                       <b class="product-basket-price">480 ₽</b>
-                      <button class="basket-button-close" type="button"></button>
+                      <button class="basket-button-close" type="button">
+                        <span class="visually-hidden">Убрать позицию</span>
+                      </button>
                     </li>
                   </ol>
                   <button class="button submit-form-button" type="submit">Оформить заказ</button>
@@ -143,7 +150,7 @@
     <main class="main-inner main-container">
       <div class="page-container">
         <header class="header-catalog">
-          <h1 class="visually-hidden">Каталог</h1>
+          <h2 class="visually-hidden">Каталог</h2>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item ">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -171,12 +178,12 @@
                 <div class="range">
                   <div class="range-sclae">
                     <div style="left: 32px; width:70px;" class="range-bar">
-                      <div class="range-toggle toggle-min" tabindex="0">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </div>
-                      <div class="range-toggle toggle-max" tabindex="0">
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -188,7 +195,7 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="radio" value="0%" name="fat-percent" class="visually-hidden control-input">
-                    <span class="control-mark" tabindex="0"></span>
+                    <span class="control-mark"></span>
                     0%
                   </label>
                 </li>
@@ -196,21 +203,21 @@
                   <label class="control">
                     <input type="radio" value="before 10%" name="fat-percent" class="visually-hidden control-input"
                       checked>
-                    <span class="control-mark" tabindex="0"></span>
+                    <span class="control-mark"></span>
                     до 10%
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="radio" value="before 30%" name="fat-percent" class="visually-hidden  control-input">
-                    <span class="control-mark" tabindex="0"></span>
+                    <span class="control-mark"></span>
                     до 30%
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="radio" value="over 30%" name="fat-percent" class="visually-hidden control-input">
-                    <span class="control-mark" tabindex="0"></span>
+                    <span class="control-mark"></span>
                     выше 30%
                   </label>
                 </li>
@@ -222,7 +229,7 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" name="fill" value="chocolate" type="checkbox" checked>
-                    <span class="control-mark" tabindex="0">
+                    <span class="control-mark">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -235,7 +242,7 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" name="fill" value="sugar" type="checkbox" checked>
-                    <span class="control-mark" tabindex="0">
+                    <span class="control-mark">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -248,7 +255,7 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" name="fill" value="fruits" type="checkbox">
-                    <span class="control-mark" tabindex="0">
+                    <span class="control-mark">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -261,7 +268,7 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" name="fill" value="syrups" type="checkbox">
-                    <span class="control-mark" tabindex="0">
+                    <span class="control-mark">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -274,7 +281,7 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" name="fill" value="jams" type="checkbox">
-                    <span class="control-mark" tabindex="0">
+                    <span class="control-mark">
                       <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -296,7 +303,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/raspbery.png" alt="Малиновое мороженое" class="popular-card-image"
+                  <img src="images/product-card/raspbery.png" alt="Малиновое мороженое." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Малинка</h3>
@@ -317,7 +324,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/pistachio.png" alt="Фисташковое мороженое" class="popular-card-image"
+                  <img src="images/product-card/pistachio.png" alt="Фисташковое мороженое." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Фисташка</h3>
@@ -338,7 +345,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/blueberry.png" alt="Черничное мороженое" class="popular-card-image"
+                  <img src="images/product-card/blueberry.png" alt="Черничное мороженое." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Черника</h3>
@@ -359,7 +366,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам" class="popular-card-image"
+                  <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Бабл-гам</h3>
@@ -381,7 +388,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/blackberry.png" alt="Мороженное с ежевичным джемом" class="popular-card-image"
+                  <img src="images/product-card/blackberry.png" alt="Мороженное с ежевичным джемом." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Ежевика</h3>
@@ -402,7 +409,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/banana.png" alt="Сливочный пломбир с банановым вкусом" class="popular-card-image"
+                  <img src="images/product-card/banana.png" alt="Сливочный пломбир с банановым вкусом." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Банан</h3>
@@ -424,7 +431,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/chocolate.png" alt="Шоколадный пломбир" class="popular-card-image"
+                  <img src="images/product-card/chocolate.png" alt="Шоколадный пломбир." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Шоколадка</h3>
@@ -445,7 +452,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/strawberry.png" alt="Сливочный пломбир с клубничным вкусом" class="popular-card-image"
+                  <img src="images/product-card/strawberry.png" alt="Сливочный пломбир с клубничным вкусом." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Клубничка</h3>
@@ -467,7 +474,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/lemon.png" alt="Лимонный сорбет" class="popular-card-image"
+                  <img src="images/product-card/lemon.png" alt="Лимонный сорбет." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Лимон</h3>
@@ -488,7 +495,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/menthol.png" alt="Сливочный пломбир с ментоловым сиропом" class="popular-card-image"
+                  <img src="images/product-card/menthol.png" alt="Сливочный пломбир с ментоловым сиропом." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Ментол</h3>
@@ -510,7 +517,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/nut.png" alt="Фисташковый пломбир с шоколадным сиропом" class="popular-card-image"
+                  <img src="images/product-card/nut.png" alt="Фисташковый пломбир с шоколадным сиропом." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Орешек</h3>
@@ -531,7 +538,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/creme-brulee.png" alt="Мароженное крем-брюле" class="popular-card-image"
+                  <img src="images/product-card/creme-brulee.png" alt="Мароженное крем-брюле." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Крем-брюле</h3>
@@ -658,7 +665,7 @@
         <section class="copyright">
           <h2 class="visually-hidden">Коопирейт</h2>
           <div class="copyright-imag-wrapper">
-            <img class="copyright-imag" src="images/logo-footer.svg" alt="Логотип html Academy" width="93" height="26">
+            <img class="copyright-imag" src="images/logo-footer.svg" alt="Логотип html Academy." width="93" height="26">
           </div>
           <p class="copyright-content">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
               academy</a> © 2021</p>

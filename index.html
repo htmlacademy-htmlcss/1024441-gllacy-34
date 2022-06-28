@@ -4,14 +4,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="body-strawberry">
     <header class="page-header">
+      <h1 class="visually-hidden">GllacyShop</h1>
       <div class="page-container header-box">
         <a href="#" class="page-header-logo">
-          <img class="header-logo" src="images/logo.svg" alt="Логотип компании 'Gllacy Shop'" width="137" height="56">
+          <img class="header-logo" src="images/logo.svg" alt="Логотип компании 'Gllacy Shop'." width="137" height="56">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -48,6 +50,7 @@
             </li>
             <li class="navigation-item navigation-item-search">
               <a href="#" class="navigation-link navigation-link-search">
+                <h2 class="visually-hidden">Поиск</h2>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                   viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -78,12 +81,12 @@
                   <p class="field-group">
                     <label class="visually-hidden" for="auth-login">Логин</label>
                     <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
-                      value="email@example.com">
+                      value="email@example.com" required>
                   </p>
                   <p class="field-group">
                     <label class="visually-hidden" for="auth-password">Пароль</label>
                     <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
-                      value="1234567">
+                      value="1234567" required>
                   </p>
                   <button class="button submit-form-button" type="submit">Войти</button>
                   <div class="entry-links">
@@ -108,25 +111,29 @@
                   <ol class="basket-list">
                     <li class="basket-item">
                       <div class="basket-image-wrapper">
-                        <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина">
+                        <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина.">
                       </div>
                       <div class="basket-discription">
                         <h3 class="basket-item-title">Малинка</h3>
                         <p class="price-per-kg">1 кг х 310 ₽</p>
                       </div>
                       <b class="product-basket-price">310 ₽</b>
-                      <button class="basket-button-close"></button>
+                      <button class="basket-button-close" type="button">
+                        <span class="visually-hidden">Убрать позицию</span>
+                      </button>
                     </li>
                     <li class="basket-item">
                       <div class="basket-image-wrapper">
-                        <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам">
+                        <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам.">
                       </div>
                       <div class="basket-discription">
                         <h3 class="basket-item-title">Бабл-гам</h3>
                         <p class="price-per-kg">1,5 кг х 320 ₽</p>
                       </div>
                       <b class="product-basket-price">480 ₽</b>
-                      <button class="basket-button-close" type="button"></button>
+                      <button class="basket-button-close" type="button">
+                        <span class="visually-hidden">Убрать позицию</span>
+                      </button>
                     </li>
                   </ol>
                   <button class="button submit-form-button" type="submit">Оформить заказ</button>
@@ -142,7 +149,6 @@
     <main class="main-index main-container">
       <div class="page-container">
         <div class="gallery-column">
-          <h1 class="visually-hidden">GllacyShop</h1>
           <div class="gallery-index">
             <section class="gallery-content">
               <h2 class="visually-hidden">Виды мороженного</h2>
@@ -174,7 +180,7 @@
                 <div class="slider-item-focused">
                   <div class="slider-image-wrapper">
                     <img class="slider-image" src="images/gallery/strawberry.png"
-                      alt="Нежный пломбир с клубничным джемом" width="306" height="507">
+                      alt="Нежный пломбир с клубничным джемом." width="306" height="507">
                   </div>
                   <div class="slider-controls">
                     <button class="slider-button slider-prev" type="button">
@@ -198,13 +204,13 @@
                 <div class="slider-item slider-item-two">
                   <div class="slider-image-wrapper">
                     <img class="slider-image banana" src="images/gallery/banana.png"
-                      alt="Сливочное мороженое со вкусом банана" width="306" height="507">
+                      alt="Сливочное мороженое со вкусом банана." width="306" height="507">
                   </div>
                 </div>
                 <div class="slider-item  slider-item-three">
                   <div class="slider-image-wrapper">
                     <img class="slider-image caramel" src="images/gallery/caramel.png"
-                      alt="Карамельный пломбир с маршмеллоу" width="306" height="507">
+                      alt="Карамельный пломбир с маршмеллоу." width="306" height="507">
                   </div>
                 </div>
               </div>
@@ -212,17 +218,17 @@
             <div class="pagination-social">
               <ol class="slider-paginator">
                 <li class="slider-paginator-item">
-                  <button class="slider-paginator-button paginator-button-active">
+                  <button class="slider-paginator-button paginator-button-active" type="button">
                     <span class="visually-hidden">1 фото</span>
                   </button>
                 </li>
                 <li class="slider-paginator-item">
-                  <button class="slider-paginator-button ">
+                  <button class="slider-paginator-button" type="button">
                     <span class="visually-hidden">2 фото</span>
                   </button>
                 </li>
                 <li class="slider-paginator-item">
-                  <button class="slider-paginator-button">
+                  <button class="slider-paginator-button" type="button">
                     <span class="visually-hidden">3 фото</span>
                   </button>
                 </li>
@@ -295,7 +301,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/raspbery.png" alt="Малиновое мороженое" class="popular-card-image"
+                  <img src="images/product-card/raspbery.png" alt="Малиновое мороженое." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Малинка</h3>
@@ -316,7 +322,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/pistachio.png" alt="Фисташковое мороженое" class="popular-card-image"
+                  <img src="images/product-card/pistachio.png" alt="Фисташковое мороженое." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Фисташка</h3>
@@ -337,7 +343,7 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/blueberry.png" alt="Черничное мороженое" class="popular-card-image"
+                  <img src="images/product-card/blueberry.png" alt="Черничное мороженое." class="popular-card-image"
                     width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Черника</h3>
@@ -358,8 +364,8 @@
             <li class="product-card">
               <a href="#" class="product-card-image-link">
                 <div class="product-image-wrapper">
-                  <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам" class="popular-card-image"
-                    width="270" height="184">
+                  <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам."
+                    class="popular-card-image" width="270" height="184">
                 </div>
                 <h3 class="product-card-title">Бабл-гам</h3>
               </a>
@@ -430,7 +436,7 @@
                 ерунды.
                 Честно =)</label>
               <input class="field newsletter-field" id="newsletter-email" placeholder="email@example.com" type="email"
-                name="newsletter-email">
+                name="newsletter-email" aria-required="true" required>
               <button class="button submit-form-button" type="submit">Отправить</button>
             </form>
           </section>
@@ -464,12 +470,13 @@
                     свяжемся с вами для подтверждения</span>
                 </span>
               </span>
-              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020"
+                required>
             </p>
             <p class="field-group appointment-form-phone">
               <label class="form-label" for="appointment-phone">Телефон</label>
               <input class="field" type="text" id="appointment-phone" name="appointment-phone"
-                placeholder="+7 800 999-00-00">
+                placeholder="+7 800 999-00-00" required>
             </p>
             <p class="field-group appointment-form-adres">
               <span class="form-label form-label-icon">
@@ -488,7 +495,7 @@
                 </span>
               </span>
               <input class="field" type="text" id="appointment-adres" name="appointment-addres"
-                placeholder="ул. Большая Конюшенная, 19/8">
+                placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="button submit-form-button" type="submit">Отправить</button>
           </form>
@@ -509,7 +516,7 @@
       </div>
     </main>
 
-    <footer class="page-footer main-footer">
+    <footer class="page-footer">
       <div class="page-container footer-container">
         <section class="social-footer">
           <h2 class="visually-hidden">Социальные сети</h2>
@@ -569,12 +576,13 @@
 
         <section class="copyright">
           <h2 class="visually-hidden">Коопирейт</h2>
-          <img src="images/logo-footer.svg" alt="Логотип html Academy" width="93" height="26">
+          <img src="images/logo-footer.svg" alt="Логотип html Academy." width="93" height="26">
           <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
               academy</a> © 2021</p>
         </section>
       </div>
     </footer>
+
     <div class="modal-container modal-container-close">
       <div class="modal modal-feedback">
         <p class="modal-feedback-title">Мы обязательно ответим вам!</p>
@@ -582,23 +590,23 @@
           <p class="field-group">
             <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
             <input class="feedback-form-field field" id="feedback-name" name="feedback-name" type="text"
-              placeholder="Имя и фамилия">
+              placeholder="Имя и фамилия" required>
           </p>
           <p class="field-group">
             <label class="visually-hidden" for="email">Email</label>
-            <input class="feedback-form-field field" type="text" id="email" name="email"
-              placeholder="email@example.com">
+            <input class="feedback-form-field field" type="text" id="email" name="email" placeholder="email@example.com"
+              required>
           </p>
-          <p class="field-group">
+          <p class="field-group field-group-message">
             <label class="visually-hidden" for="messege">Введите сообщение в свободной форме</label>
             <textarea class="feedback-form-field field feedback-form-field-messege" name="messege" id="messege"
-              cols="30" rows="7" placeholder="В свободной форме"></textarea>
+               placeholder="В свободной форме" required></textarea>
           </p>
+          <button class="button submit-form-button" type="submit">Отправить</button>
         </form>
-        <button class="close-button">
+        <button class="close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <button class="button submit-form-button" type="submit">Отправить</button>
       </div>
     </div>
   </body>
